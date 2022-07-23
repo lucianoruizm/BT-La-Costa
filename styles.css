@@ -7,6 +7,7 @@
 :root {
     --primary: #483D8B;
     --secondary: #e6060642;
+    --secondary-visible: #733598;
 }
 
 body{
@@ -28,6 +29,7 @@ header{
 
 }
 
+
 .background-img{
     left: 50%;
     min-height: 100%;
@@ -47,6 +49,7 @@ header{
     cursor: pointer;
 }
 
+
 h1{
     display: block;
     letter-spacing: .3rem;
@@ -63,7 +66,7 @@ h2 {
 hr {
     background-image: linear-gradient(
         to right,transparent,
-        var(--secondary),
+        var(--secondary-visible),
         transparent
     );
     border: 0;
@@ -90,6 +93,7 @@ a{
     letter-spacing: 3px;
 }
 
+
 nav{
     position: fixed;
     width: 100%;
@@ -109,6 +113,7 @@ nav ul li a:hover {
     transition: color .3s ease,color .3s ease
 }
 
+
 ul{
     padding: 0;
     margin-right: 90px;
@@ -120,6 +125,7 @@ ul li{
 
 ol {
     margin: 30px 50px;
+    padding: 0;
 }
 
 li{
@@ -129,6 +135,14 @@ li{
     color: #333;
     font-size: 20px;
     list-style: inside;
+}
+
+p{
+    font-size: 1.5rem;
+    font-weight: lighter;
+    text-align: justify;
+    color: #333;
+    padding: 40px;
 }
 
 .login{
@@ -141,7 +155,7 @@ li{
 
 .login:hover{
     cursor: pointer;
-    background: #733598;
+    background: var(--secondary-visible);
     transition: background .3s;
 }
 
@@ -150,41 +164,110 @@ li{
     padding-top: 20px;
 }
 
-.start h1 {
-    margin-top: 50px;
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 80px 50px 50px;
+}
+
+#welcome {
+    width: 100%;
+}
+
+#welcome h1 {
     text-align: center;
-    font-size: 3em;
+    font-size: 5em;
 }
 
-.bt {
-   display: block;
-   margin: auto;
-   padding: 20px;
-   width: 350px;
-   height: 250px;
+#welcome p {
+    font-size: 1.2em;
+    padding: 0;
+    margin: 50px;
 }
 
-.img-working{
-    border-radius: 1cm;
-    display: block;
-    margin: auto;
+#welcome-2 {
+    text-align: left;
 }
 
-.about-us{
-    margin: 50px 0 50px;
+#welcome-2 h3 {
+    padding: 0;
+    margin-top: 80px;
+    text-align: center;
 }
-    
-p{
+
+#welcome-2 ol {
+    margin-top: 60px;
+}
+
+.container-2 {
+    display: flex;
+    margin: 50px 80px 50px;
+}
+
+.button-container-2 {
+    width: 150px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.button-container-2 button{
+    border-radius: 50px;
+    border: none;
+    background: var(--secondary-visible);
+    color: #eee;
+    padding: 15px;
+}
+
+.button-container-2 button:hover{
+    cursor: pointer;
+    background: var(--primary);
+    transition: background .3s;
+}
+
+.container-3 {
+    margin: 50px 0 0 50px;
+}
+
+.container-3 h2{
+    margin-bottom: 100px;
+}
+
+.container-publicaciones-previas {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 60px 80px 100px;
+}
+
+.vista-previa {
+    margin-right: 30px;
+    background: #483D8B;
+    border-radius: 2rem;
+}
+
+.vista-previa p {
     font-size: 1.5rem;
-    font-weight: lighter;
-    text-align: justify;
-    color: #333;
+    color: #eee;
     padding: 40px;
-    margin: 20px 50px;
 }
 
-.social-networks {
-    margin: 50px 0 50px;
+.vista-previa:hover {
+    cursor: pointer;
+    background: var(--secondary-visible);
+}
+
+#container-4 {
+    display: flex;
+    margin: 50px 80px 50px;
+    padding-right: 50px;
+}
+
+.about-us p{
+    font-size: 1.2rem;
+}
+
+.social-networks h2 {
+    width: 350px;
 }
 
 .logos-networks {
@@ -200,6 +283,20 @@ p{
 .logos-networks:hover {
     opacity: 1;
 }
+
+.bt {
+    display: block;
+    margin: auto;
+    padding: 20px;
+    width: 350px;
+    height: 250px;
+ }
+ 
+ .img-working{
+     border-radius: 1cm;
+     display: block;
+     margin: auto;
+ }
 
 footer{
     padding: 50px;
