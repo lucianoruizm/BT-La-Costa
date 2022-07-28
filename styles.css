@@ -12,7 +12,7 @@
 
 body{
     display: block;
-    background-color: rgb(255, 255, 255);
+    background-color: #fff;
 }
 
 header{
@@ -24,9 +24,8 @@ header{
     overflow: hidden;
     position: relative;
     text-align: center;
-    color: #eee;
+    color: #f1f1f1;
     padding-bottom: 80px;
-
 }
 
 
@@ -42,7 +41,8 @@ header{
 }
 
 .logo {
-    max-width: 15%;
+    height: 64px;
+    width: 80px;
 }
 
 .logo:hover{
@@ -116,7 +116,7 @@ nav ul li a:hover {
 
 ul{
     padding: 0;
-    margin-right: 90px;
+    margin: 0 90px 0 120px;
 }
 
 ul li{
@@ -148,7 +148,7 @@ p{
 .login{
     border: none;
     background: var(--secondary);
-    color: rgb(255, 255, 255);
+    color: #f1f1f1;
     padding: 10px;
     height: 64px;
 }
@@ -203,6 +203,7 @@ p{
 .container-2 {
     display: flex;
     margin: 50px 80px 50px;
+    justify-content: space-evenly;
 }
 
 .button-container-2 {
@@ -264,6 +265,13 @@ p{
 
 .about-us p{
     font-size: 1.2rem;
+    padding-bottom: 0;
+}
+
+.logo-2 {
+    display: block;
+    margin: auto;
+    max-width: 30%;   
 }
 
 .social-networks h2 {
@@ -274,13 +282,27 @@ p{
     display: block;
     margin: auto;
     padding-top: 50px;
-    width: 8%;
+    width: 15%;
     cursor: pointer;
     opacity: 0.6;
     transition: 0.3s;
 }
 
 .logos-networks:hover {
+    opacity: 1;
+}
+
+.logo-fb {
+    display: block;
+    margin: auto;
+    width: 70px;
+    padding-top: 50px;
+    cursor: pointer;
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
+.logo-fb:hover {
     opacity: 1;
 }
 
@@ -305,4 +327,10 @@ footer{
     background-color: rgb(5, 5, 92);
     text-align: center;
     color: #fff;
+}
+
+footer p{
+    font-size: 1rem;
+    color: #fff;
+    text-align: center;   
 }
