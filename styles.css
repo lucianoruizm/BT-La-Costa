@@ -45,6 +45,10 @@ header{
     width: 80px;
 }
 
+.logo-mobile-container{
+    display: none;
+}
+
 
 
 h1{
@@ -330,4 +334,60 @@ footer p{
     font-size: 1rem;
     color: #fff;
     text-align: center;   
+}
+
+
+
+/* Ajustes responsive */
+@media(max-width: 850px) {
+
+    .logo{
+        display: none;
+    }
+
+    .background-img{
+        display: none;
+    }
+
+    header{
+        background: #f1f1f1;
+        padding: 0;
+        margin: 0;
+    }
+
+    .bt-lc {
+        display: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .logo-mobile-container{
+        display: block;
+        background: var(--primary);
+        clip-path: polygon(0 0, 100% 34%, 100% 67%, 0 100%);
+    }
+
+    .logo-mobile {
+        display: block;
+        width: 200px;
+        margin: 0 auto;
+    }
+
+    .container {
+        display: block;
+        margin: 100px 0 0 0;
+    }
+
+    .container-2 {
+        display: block;
+    }
+
+    .container-publicaciones-previas {
+        margin: 0;
+    }
+
+    #container-4{
+        margin: 50px 10px 0;
+        padding: 0;
+    }
 }

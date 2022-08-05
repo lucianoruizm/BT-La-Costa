@@ -1,0 +1,9 @@
+.container-publicaciones {
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    height: 80px;
+    border-radius: 15px;
+    background: #ccc;
+    align-items: center;
+}
