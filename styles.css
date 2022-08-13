@@ -41,7 +41,7 @@ h2 {
 }
 
 h3 {
-    width: 85%;
+    min-width: 85%;
     margin-left: auto;
     margin-right: auto;
     padding-top: 30px;
@@ -93,7 +93,6 @@ nav ul li a:hover {
 
 ul{
     padding: 0;
-    margin: 0 90px 0 120px;
 }
 
 ul li{
@@ -191,8 +190,10 @@ footer p{
 
 #container {
     display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: space-between;
-    margin: 50px 80px 50px 50px;
+    margin: 50px 0;
 }
 
 .welcome {
@@ -211,7 +212,7 @@ footer p{
 }
 
 .welcome-2 {
-    text-align: left;
+    text-align: center;
 }
 
 .welcome-2 h3 {
@@ -226,32 +227,49 @@ footer p{
 
 #container-2 {
     display: flex;
-    margin: 50px 80px 50px;
+    flex-wrap: wrap;
     justify-content: space-evenly;
+    margin-block: 2rem;
+    gap: 1rem;
 }
 
-.button-container-2 {
-    width: 150px;
-    margin-left: 50%;
-    transform: translateX(-50%);
+.card {
+  display: flex;
+  flex-direction: column;
+  width: clamp(26rem, calc(20rem + 2vw), 22rem);
+  border-radius: 1em;
+  box-shadow: 0 .1rem 1rem #eee;
+  background: #ffffff;
+  background: linear-gradient(90deg, #ffffff 0%, #eee 54%, #ffffff 100%);
 }
 
-.button-container-2 button{
+.card-body ol {
+  margin: 20px;
+}
+
+.card-body li {
+    font-size: 1.1rem;
+}
+
+.card-body button{
     border-radius: 50px;
     border: none;
     background: var(--secondary-visible);
     color: #eee;
-    padding: 15px;
+    padding: 15px 25px;
+    margin-left: 50%;
+    margin-bottom: 5px;
+    transform: translateX(-50%);
 }
 
-.button-container-2 button:hover{
+.card-body button:hover{
     cursor: pointer;
     background: var(--primary);
     transition: background .3s;
 }
 
 #container-3 {
-    margin: 50px 0 0 50px;
+    margin: 50px;
 }
 
 #container-3 h2{
@@ -260,12 +278,12 @@ footer p{
 
 .container-publicaciones-previas {
     display: flex;
+    gap: 30px;
     justify-content: space-evenly;
     margin: 60px 80px 100px;
 }
 
 .vista-previa {
-    margin-right: 30px;
     background: #483D8B;
     border-radius: 2rem;
 }
@@ -344,14 +362,41 @@ footer p{
      border-radius: .5cm;
      display: block;
      margin: auto;
-     width: 500px;
+     max-width: 400px;
  }
 
 
 
 /* Ajustes responsive */
-@media(max-width: 850px) {
+@media(max-width: 935px) {
 
+    #container {
+        display: block;
+        margin: 100px 0 0 0;
+    }
+
+    #container-2 {
+    }
+
+    .container-publicaciones-previas {
+        margin: 0;
+    }
+
+    #container-4{
+        display: block;
+        margin: 50px 10px 0;
+        padding: 0;
+    }
+
+    .social-networks {
+        display: inline;
+    }
+}
+
+
+/* Ajustes responsive */
+@media(max-width: 635px) {
+    
     .logo{
         display: none;
     }
@@ -368,6 +413,14 @@ footer p{
         background: #f1f1f1;
         padding: 0;
         margin: 0;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    li {
+        font-size: 15px;
     }
 
     .container-bt {
@@ -400,25 +453,14 @@ footer p{
     }
 
     #container {
-        display: block;
-        margin: 100px 0 0 0;
-    }
-
-    #container-2 {
-        display: block;
+        margin-top: 50px;
     }
 
     .container-publicaciones-previas {
-        margin: 0;
-    }
-
-    #container-4{
         display: block;
-        margin: 50px 10px 0;
-        padding: 0;
     }
 
-    .social-networks {
-        display: inline;
+    .vista-previa {
+        margin: 50px;
     }
 }
