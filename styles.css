@@ -90,11 +90,6 @@ nav ul li a:hover {
     transition: color .3s ease,color .3s ease
 }
 
-
-ul{
-    padding: 0;
-}
-
 ul li{
     display: inline-block;
 }
@@ -211,6 +206,12 @@ footer p{
     margin: 50px;
 }
 
+.img{
+    display: block;
+    margin: auto;
+    max-width: 400px;
+}
+
 .welcome-2 {
     text-align: center;
 }
@@ -269,35 +270,40 @@ footer p{
 }
 
 #container-3 {
-    margin: 50px;
-}
-
-#container-3 h2{
-    margin-bottom: 100px;
-}
-
-.container-publicaciones-previas {
     display: flex;
-    gap: 30px;
-    justify-content: space-evenly;
-    margin: 60px 80px 100px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-block: 2rem;
+    align-items: center;
 }
 
-.vista-previa {
-    background: #483D8B;
-    border-radius: 2rem;
+.card-container {
+    margin-top: 30px;
 }
 
-.vista-previa p {
-    font-size: 1.5rem;
-    color: #eee;
-    padding: 40px;
+.card-pv {
+    display: flex;
+    flex-direction: column;
+    margin: 45px 0;
+    width: clamp(26rem, calc(20rem + 2vw), 22rem);
+    border-radius: 1em;
+    box-shadow: 0 .1rem 1rem #eee;
+    background: #ffffff;
+    background: linear-gradient(90deg, #ffffff 0%, #eee 54%, #ffffff 100%);
 }
 
-.vista-previa:hover {
+.card-pv :hover{
     cursor: pointer;
-    background: var(--secondary-visible);
+    border-radius: 1em;
+    box-shadow: 0 .1rem 1rem #eee;
+    background: linear-gradient(90deg, #ffffff 0%, #eee 54%, #ffffff 100%);
 }
+
+.card-pv p {
+    font-size: 1.3em;
+    text-align: center;
+}
+
 
 #container-4 {
     display: flex;
@@ -357,29 +363,13 @@ footer p{
     width: 350px;
     height: 250px;
  }
- 
- .img-working{
-     border-radius: .5cm;
-     display: block;
-     margin: auto;
-     max-width: 400px;
- }
-
-
 
 /* Ajustes responsive */
-@media(max-width: 935px) {
+/* @media(max-width: 935px) {
 
     #container {
         display: block;
         margin: 100px 0 0 0;
-    }
-
-    #container-2 {
-    }
-
-    .container-publicaciones-previas {
-        margin: 0;
     }
 
     #container-4{
@@ -391,11 +381,11 @@ footer p{
     .social-networks {
         display: inline;
     }
-}
+} */
 
 
 /* Ajustes responsive */
-@media(max-width: 635px) {
+@media(max-width: 675px) {
     
     .logo{
         display: none;
@@ -432,7 +422,6 @@ footer p{
     .logo-mobile-container{
         display: block;
         background: var(--primary);
-        clip-path: polygon(0 0, 100% 34%, 100% 67%, 0 100%);
     }
 
     .logo-mobile {
@@ -456,11 +445,24 @@ footer p{
         margin-top: 50px;
     }
 
-    .container-publicaciones-previas {
-        display: block;
+    #container-4 {
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+/* Ajustes responsive */
+@media(max-width: 470px) {
+    .welcome h1 {
+        font-size: 3em;
     }
 
-    .vista-previa {
-        margin: 50px;
+    .img {
+        max-width: 15em;
+    }
+
+    h3 {
+        font-size: 1em;
     }
 }
