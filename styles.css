@@ -90,22 +90,20 @@ nav ul li a:hover {
     transition: color .3s ease,color .3s ease
 }
 
-ul li{
+ul li {
     display: inline-block;
 }
 
 ol {
-    margin: 30px 50px;
+    margin: 0;
     padding: 0;
 }
 
 li{
-    font-weight: 500;
     text-align: justify;
     line-height: 1.6;
-    color: #333;
+    color: #000;
     font-size: 20px;
-    list-style: inside;
 }
 
 p{
@@ -286,22 +284,47 @@ footer p{
     flex-direction: column;
     margin: 45px 0;
     width: clamp(26rem, calc(20rem + 2vw), 22rem);
-    border-radius: 1em;
-    box-shadow: 0 .1rem 1rem #eee;
+    border-radius: 2em;
+    box-shadow: 1rem 2rem 1rem #eee;
     background: #ffffff;
-    background: linear-gradient(90deg, #ffffff 0%, #eee 54%, #ffffff 100%);
+    /* background: linear-gradient(90deg, #ffffff 0%, #eee 54%, #ffffff 100%); */
 }
 
 .card-pv :hover{
     cursor: pointer;
     border-radius: 1em;
-    box-shadow: 0 .1rem 1rem #eee;
-    background: linear-gradient(90deg, #ffffff 0%, #eee 54%, #ffffff 100%);
+    /* box-shadow: 0 .1rem 1rem #eee; */
+    /* background: linear-gradient(90deg, #ffffff 0%, #eee 54%, #ffffff 100%); */
+}
+
+.destacado {
+    background: linear-gradient(
+        var(--primary),
+        var(--secondary-visible)
+    );
+    color: #f1f1f1;
+}
+
+.destacado p {
+    color: #f1f1f1;
+}
+
+.card-pv h3 {
+    font-size: 1.5em;
+    text-align: justify;
 }
 
 .card-pv p {
-    font-size: 1.3em;
-    text-align: center;
+    font-size: 1em;
+    text-align: justify;
+}
+
+.card-pv span {
+    font-size: .7em;
+}
+
+.card-pv-body {
+    margin: 20px;
 }
 
 
@@ -385,7 +408,7 @@ footer p{
 
 
 /* Ajustes responsive */
-@media(max-width: 675px) {
+@media(max-width: 691px) {
     
     .logo{
         display: none;
@@ -436,9 +459,39 @@ footer p{
 
     .menu-mobile {
         display: flex;
-        flex-direction: column;
-        color: rgb(0, 0, 0);
-        background: none;
+        justify-content: space-between;
+        color: #333;
+        background: #483D8B;
+        margin-top: 60px;
+        transition: max-height .4s ease;
+    }
+    
+    .menu-mobile ul {
+        padding: 0;
+        
+    }
+
+    .menu-mobile ul li {
+        display: flex;
+    }
+    
+    .menu-mobile li{
+        text-align: justify;
+        line-height: 1.6;
+        color: #000;
+        font-size: 15px;
+    }
+
+    .menu-mobile a {
+        font-size: .9rem;
+    }
+    
+    header .hidden {
+        max-height: 0;
+    }
+
+    header .show {
+        max-height: 190px;
     }
 
     #container {

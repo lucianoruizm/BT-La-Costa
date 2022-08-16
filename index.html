@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="hamburger.css">
+
     <title>Inicio</title>
 </head>
 <body>
@@ -21,10 +23,15 @@
                 <li><a href="./pages/publicaciones.html">PUBLICACIÓN</a></li>
                 <li><a href="#contact">CONTACTO</a></li>
             </ul>
+            <button class="hamburger hamburger--collapse" type="button">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
             <button class="login" onclick="location.href='./pages/login.html'";>Login / Register</button>
         </div>
     </nav>
-    <div class="menu-mobile">
+    <div class="menu-mobile hidden">
         <ul>
             <li><a href="./ofertas/ofertas.html">OFERTA</a></li>
             <li><a href="./publicaciones/publicaciones.html">PUBLICACIÓN</a></li>
@@ -100,19 +107,39 @@
             <h2>Navegue en nuestros listados de publicaciones en diferentes secciones</h2>
         </div>
         <div class="card-container">
-            <div class="card-pv" onclick="location.href='./pages/ofertas.html'";>
-                <div>
-                    <div>
-                        <p>Visitar lista de ofertas</p>
-                    </div>
+            <div class="card-pv destacado" onclick="location.href='./pages/ofertas.html'";>
+                <div class="card-pv-body">
+                   <h3>Guardia de Seguridad</h3>
+                   <p>
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt minus eius sed, quis, sequi reiciendis debitis corporis.
+                   </p>
+                   <span>Nombre del lugar</span><br>
+                   <span>Dirección</span><br>
+                   <span>Ubicación</span><br>
+                   <span>Contacto</span>              
                 </div>
             </div>
+            <div class="card-pv" onclick="location.href='./pages/ofertas.html'";>
+                <div class="card-pv-body">
+                    <h3>Se busca ayudante de cocina</h3>
+                    <p>
+                       Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt minus eius sed, quis, sequi reiciendis debitis corporis.
+                    </p>
+                    <span>Nombre del lugar</span><br>
+                    <span>Dirección</span><br>
+                    <span>Ubicación</span><br>
+                    <span>Contacto</span>     
+                 </div>
+            </div>
             <div class="card-pv" onclick="location.href='./pages/publicaciones.html'";>
-                <div>
-                    <div>
-                        <p>Visitar lista de sevicios ofrecidos</p>
-                    </div>
-                </div>
+                <div class="card-pv-body">
+                    <h3>Peluquero a domicilio</h3>
+                    <p>
+                       Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt minus eius sed, quis, sequi reiciendis debitis corporis.
+                    </p>
+                    <span>Ubicación</span><br>
+                    <span>Contacto</span>              
+                 </div>
             </div>
         </div>
     </div>
@@ -153,4 +180,5 @@
 </footer>
   
 </body>
+<script src="script.js"></script>
 </html>
