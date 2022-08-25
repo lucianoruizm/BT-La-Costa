@@ -518,4 +518,114 @@ footer p{
     h3 {
         font-size: 1em;
     }
+
+    .card-pv {
+        max-width: 290px;
+        max-height: 250px;
+    }
+    
+    .card-pv h3 {
+        font-size: 1em;
+        padding: 10px 0;
+    }
+    
+    .card-pv p {
+        font-size: .7em;
+        padding: 2px 1px 5px;
+    }
+    
+    .card-pv span {
+        font-size: .6em;
+    }
+}
+
+/* Ajustes responsive */
+@media(max-width: 300px) {
+
+    /* nav {
+        max-width: 294px;
+    } */
+
+    .login {
+        padding: 5px;
+        height: 64px;
+        font-size: .9em;
+    }
+
+    .welcome h1 {
+        font-size: 2em;
+    }
+
+    .welcome p {
+        margin: 5px;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+
+    .card-pv {
+        max-width: 250px;
+        max-height: 210px;
+    }
+    
+    .card-pv h3 {
+        font-size: .8em;
+        padding: 10px 0;
+    }
+    
+    .card-pv p {
+        font-size: .5em;
+        padding: 2px 1px 5px;
+    }
+    
+    .card-pv span {
+        font-size: .3em;
+    }
+
+    .about-us p {
+        font-size: 1rem;
+        max-width: 20em;
+        padding: 5px;
+    }
+
+    .social-networks {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin-bottom: 15px;
+    }
+
+    .social-networks h2 {
+        font-size: 1.3rem;
+        max-width: 20em;
+    }
+
+    .logo-fb {
+        margin: auto;
+        max-width: 3em;
+        padding-top: 20px;
+    }
+
+    .logos-networks {
+        margin: auto;
+        padding-top: 20px;
+        max-width: 2em;
+    }
+
+    footer {
+        margin-top: 0;
+        padding: 30px;
+        font-size: .7rem;
+    }
+
+    footer p {
+        font-size: .7rem;
+        padding: 0 0 5px;
+    }
+
+    strong {
+        font-size: .7rem;
+    }
+   
 }
