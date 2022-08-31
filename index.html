@@ -7,178 +7,171 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="hamburger.css">
-
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/hamburger.css">
     <title>Inicio</title>
 </head>
 <body>
-
-<header>
-    <nav>
-        <div>
-            <img class="logo" src="./assets/logo-BT-blue.png" alt="bt">
-            <ul class="menu-desktop">
-                <li><a href="./pages/ofertas.html">OFERTA</a></li>
-                <li><a href="./pages/publicaciones.html">PUBLICACIÓN</a></li>
+    <header>
+        <nav>
+            <div>
+                <img class="logo" src="./assets/logo-BT-blue.png" alt="bt">
+                <ul class="menu-desktop">
+                    <li><a href="./ofertas.html">OFERTA</a></li>
+                    <li><a href="./publicaciones.html">PUBLICACIÓN</a></li>
+                    <li><a href="#contact">CONTACTO</a></li>
+                </ul>
+                <button class="hamburger hamburger--collapse" type="button">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                </button>
+                <button class="login" onclick="location.href='./login.html'";>Login / Register</button>
+            </div>
+        </nav>
+        <div class="menu-mobile hidden">
+            <ul>
+                <li><a href="./ofertas.html">OFERTA</a></li>
+                <li><a href="./publicaciones.html">PUBLICACIÓN</a></li>
                 <li><a href="#contact">CONTACTO</a></li>
             </ul>
-            <button class="hamburger hamburger--collapse" type="button">
-                <span class="hamburger-box">
-                    <span class="hamburger-inner"></span>
-                </span>
-            </button>
-            <button class="login" onclick="location.href='./pages/login.html'";>Login / Register</button>
         </div>
-    </nav>
-    <div class="menu-mobile hidden">
-        <ul>
-            <li><a href="./ofertas/ofertas.html">OFERTA</a></li>
-            <li><a href="./publicaciones/publicaciones.html">PUBLICACIÓN</a></li>
-            <li><a href="#contact">CONTACTO</a></li>
-        </ul>
-    </div>
-    <div class="container-bt">
-        <!-- <h1>BUSCO TRABAJO</h1> -->
-        <img class="logo-2" src="./assets/logo-BT-sinfondoB-removebg-preview.png" alt="bt">
-        <!-- <h2>LA COSTA</h2> -->
-        <img class ="background-img" src="https://www.itmastersmag.com/wp-content/uploads/2017/05/empleados.jpg" alt="atWork">
-    </div>
-</header>
+        <div class="container-bt">
+            <img class="logo-2" src="./assets/logo-BT-sinfondoB-removebg-preview.png" alt="bt">
+            <img class ="background-img" src="https://www.itmastersmag.com/wp-content/uploads/2017/05/empleados.jpg" alt="atWork">
+        </div>
+    </header>
 
-<main>
-    <div id="container">
-            <div class="welcome">
-                <h1>¡Bienvenido!</h1>
-                <div class="logo-mobile-container">
-                   <img class="logo-mobile" src="./assets/logo-BT-blue.png" alt="bt">
+    <main>
+        <div id="section-one">
+                <div class="welcome">
+                    <h1>¡Bienvenido!</h1>
+                    <div class="logo-mobile__container">
+                       <img class="logo-mobile" src="./assets/logo-BT-blue.png" alt="bt">
+                    </div>
+                    <p>Encuentre las mejores ofertas laborales y halle ¡su puesto ideal!, o si busca candidatos
+                       para sumar a su empresa sientase libre de explorar para encontrar a los que mas se ajusten
+                       al perfil deseado.
+                    </p>
+                    <div>
+                        <img class="img" src="https://i0.wp.com/www.zigsaw.in/jobs/wp-content/uploads/2020/07/Types-of-Employees-in-an-Organization.jpg?fit=2000%2C900&ssl=1" alt="atWork">
+                    </div>
                 </div>
-                <p>Encuentre las mejores ofertas laborales y halle ¡su puesto ideal!, o si busca candidatos
-                   para sumar a su empresa sientase libre de explorar para encontrar a los que mas se ajusten
-                   al perfil deseado.
-                </p>
-                <div>
-                    <img class="img" src="https://i0.wp.com/www.zigsaw.in/jobs/wp-content/uploads/2020/07/Types-of-Employees-in-an-Organization.jpg?fit=2000%2C900&ssl=1" alt="atWork">
+                <div class="first-info">
+                    <h3>Si buscas trabajo o candidatos para tu empresa ¡BT La Costa es tu mejor opción!</h3>
+                    <div class="list-container">   
+                       <ol>
+                          <li>Los anuncios pueden filtrarse por localidades.</li>
+                          <li>Publicaciones odenadas en distintas secciones.</li>
+                          <li>El usuario empleador tendra su publicación destacada.</li>
+                          <li>Esta plataforma ofrece seguridad y confianza.</li>
+                       </ol>
+                    </div>
                 </div>
-            </div>
-            <div class="welcome-2">
-                <h3>Si buscas trabajo o canditados para tu empresa ¡BT La Costa es tu mejor opción!</h3>
-                
-                <ol>
-                   <li>Los anuncios pueden filtrarse por localidades.</li>
-                   <li>Publicaciones odenadas en distintas secciones.</li>
-                   <li>El usuario empleador tendra su publicación destacada.</li>
-                   <li>Esta plataforma ofrece seguridad y confianza.</li>
-                </ol>
-            </div>
-    </div>
-
-    <hr>
-
-    <div id="container-2">
-        <div class="card">
-            <div class="card-body">
-                <h3>¡Las ofertas laborales con anuncios destacados!</h3> 
-                <ol>
-                    <li>Publica tu vacante fácilmente en sencillos pasos.</li>
-                    <li>Encuentra al candidato ideal para el perfil deseado.</li>
-                    <li>El usuario estandar puede compartir ofertas.</li>
-                </ol>
-                <button>Publicar</button>
-            </div>
         </div>
-        <div class="card">
-            <div class="card-body">
-                <h3>¡Como usuario estandar puede ofrecer sus servicios!</h3> 
-                <ol>
-                    <li>No espere a publicar las tareas que puede realizar.</li>
-                    <li>Hay usuarios que pueden necesitar a alguien como usted.</li>
-                    <li>¡Demuestre que tan profesional es!.</li>
-                </ol>
-                <button>Publicar</button>
-            </div>
-        </div>
-    </div>
-
-    <hr>
     
-    <div id="container-3">
-        <div>
-            <h2>Navegue en nuestros listados de publicaciones en diferentes secciones</h2>
-        </div>
-        <div class="card-container">
-            <div class="card-pv destacado" onclick="location.href='./pages/ofertas.html'";>
-                <div class="card-pv-body">
-                   <h3>Guardia de Seguridad</h3>
-                   <p>
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt minus eius sed, quis, sequi reiciendis debitis corporis.
-                   </p>
-                   <span>Nombre del lugar</span><br>
-                   <span>Dirección</span><br>
-                   <span>Ubicación</span><br>
-                   <span>Contacto</span>              
+        <hr>
+    
+        <div id="section-two">
+            <div class="card-info">
+                <div class="card-info__body">
+                    <h3>¡Las ofertas laborales con anuncios destacados!</h3> 
+                    <ol>
+                        <li>Publica tu vacante fácilmente en sencillos pasos.</li>
+                        <li>Encuentra al candidato ideal para el perfil deseado.</li>
+                        <li>El usuario estandar puede compartir ofertas.</li>
+                    </ol>
+                    <button onclick="location.href='./ofertas.html'";>Publicar</button>
                 </div>
             </div>
-            <div class="card-pv" onclick="location.href='./pages/ofertas.html'";>
-                <div class="card-pv-body">
-                    <h3>Se busca ayudante de cocina</h3>
-                    <p>
-                       Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt minus eius sed, quis, sequi reiciendis debitis corporis.
-                    </p>
-                    <span>Nombre del lugar</span><br>
-                    <span>Dirección</span><br>
-                    <span>Ubicación</span><br>
-                    <span>Contacto</span>     
-                 </div>
-            </div>
-            <div class="card-pv" onclick="location.href='./pages/publicaciones.html'";>
-                <div class="card-pv-body">
-                    <h3>Peluquero a domicilio</h3>
-                    <p>
-                       Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt minus eius sed, quis, sequi reiciendis debitis corporis.
-                    </p>
-                    <span>Ubicación</span><br>
-                    <span>Contacto</span>              
-                 </div>
+            <div class="card-info">
+                <div class="card-info__body">
+                    <h3>¡Como usuario estandar puede ofrecer sus servicios!</h3> 
+                    <ol>
+                        <li>No espere a publicar las tareas que puede realizar.</li>
+                        <li>Hay usuarios que pueden necesitar a alguien como usted.</li>
+                        <li>¡Demuestre que tan profesional es!.</li>
+                    </ol>
+                    <button onclick="location.href='./publicaciones.html'";>Publicar</button>
+                </div>
             </div>
         </div>
-    </div>
-
-    <hr>
-
-    <div id="container-4">
-        <div class="about-us">
-           <h2>
-            ¿Quiénes somos?
-           </h2>
-           <p>
-               BT La Costa es una web que ofrece una herramienta más que aporta información sobre la bolsa de trabajo en el Partido de La Costa, destacando 
-               las publicaciones de reclutadores y división entre oferta y demanda. De esta forma se obtiene facilidad a la hora de buscar anuncios
-               disponibles filtrando la búsqueda. BT La Costa logra una comunicación fluida entre los usuarios de la plataforma, donde además se brindará
-               seguridad y autenticación de cuentas, mayormente para que las publicaciones que harán los usuarios sean confiables y compartidas sin preocupación.  
-           </p>
-           <img class="logo-3" src="./assets/logo-BT-white.png" alt="bt">
-        </div> 
+    
+        <hr>
         
-        <div class="social-networks">
-            <h2>
-            ¡Seguinos en nuestras redes sociales!
-            </h2>
-            <img class="logo-fb" src="./assets/fblogosilhouette.png" alt="facebook">
-            <img class="logos-networks" src="./assets/iglogosilhouette.png" alt="instagram">
-            <img class="logos-networks" src="./assets/twitterlogosilhouette.png" alt="twitter">
+        <div id="section-three">
+            <div>
+                <h2>Navegue en nuestros listados de publicaciones en diferentes secciones</h2>
+            </div>
+            <div class="card-post__container">
+                <div class="card-post highlighted-post" onclick="location.href='./ofertas.html'";>
+                    <div class="card-post__body">
+                       <h3>Guardia de Seguridad</h3>
+                       <p>
+                          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt minus eius sed, quis, sequi reiciendis debitis corporis.
+                       </p>
+                       <span>Nombre del lugar</span><br>
+                       <span>Dirección</span><br>
+                       <span>Ubicación</span><br>
+                       <span>Contacto</span>              
+                    </div>
+                </div>
+                <div class="card-post" onclick="location.href='./ofertas.html'";>
+                    <div class="card-post__body">
+                        <h3>Se busca ayudante de cocina</h3>
+                        <p>
+                           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt minus eius sed, quis, sequi reiciendis debitis corporis.
+                        </p>
+                        <span>Nombre del lugar</span><br>
+                        <span>Dirección</span><br>
+                        <span>Ubicación</span><br>
+                        <span>Contacto</span>     
+                     </div>
+                </div>
+                <div class="card-post" onclick="location.href='./publicaciones.html'";>
+                    <div class="card-post__body">
+                        <h3>Peluquero a domicilio</h3>
+                        <p>
+                           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt minus eius sed, quis, sequi reiciendis debitis corporis.
+                        </p>
+                        <span>Ubicación</span><br>
+                        <span>Contacto</span>              
+                     </div>
+                </div>
+            </div>
         </div>
-    </div>
-
-</main>
-
-
-
-<footer>
-    <p id="contact">Contactenos para cualquier tipo de consulta al siguiente email: <strong>buscotrabajolacosta@bt.com</strong></p>
-    Copyright 2021 - 2022
-</footer>
-  
+    
+        <hr>
+    
+        <div id="section-four">
+            <div class="about-us">
+               <h2>
+                ¿Quiénes somos?
+               </h2>
+               <p>
+                   BT La Costa es una web que ofrece una herramienta más que aporta información sobre la bolsa de trabajo en el Partido de La Costa, destacando 
+                   las publicaciones de reclutadores y división entre oferta y demanda. De esta forma se obtiene facilidad a la hora de buscar anuncios
+                   disponibles filtrando la búsqueda. BT La Costa logra una comunicación fluida entre los usuarios de la plataforma, donde además se brindará
+                   seguridad y autenticación de cuentas, mayormente para que las publicaciones que harán los usuarios sean confiables y compartidas sin preocupación.  
+               </p>
+               <img class="logo-3" src="./assets/logo-BT-white.png" alt="bt">
+            </div> 
+            
+            <div class="social-networks">
+                <h2>
+                ¡Seguinos en nuestras redes sociales!
+                </h2>
+                <img class="logo-fb" src="./assets/fblogosilhouette.png" alt="facebook">
+                <img class="logos-networks" src="./assets/iglogosilhouette.png" alt="instagram">
+                <img class="logos-networks" src="./assets/twitterlogosilhouette.png" alt="twitter">
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <p id="contact">Contactenos para cualquier tipo de consulta al siguiente email: <strong>buscotrabajolacosta@bt.com</strong></p>
+        &copy; 2021 - 2022
+    </footer>
 </body>
-<script src="script.js"></script>
+<script src="./scripts/script.js"></script>
 </html>

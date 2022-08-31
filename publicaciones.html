@@ -4,27 +4,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="publicaciones.css">
+    <link rel="stylesheet" href="./css/posts.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/hamburger.css">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <title>Oferta</title>
 </head>
 <body>
     <header>
         <nav>
-            <div class="container-1">
-                <div class="box">
-                    <div class="c-1">
-                        <span class="icon"><i class="fa fa-search"></i></span>
-                        <input type="search" id="search" placeholder="Search..."/>
-                    </div>
-                </div>
-                <a href="../index.html"><img class="logo" href="../index.html" src="../assets/logo-BT-blue.png" alt="bt"></a>
-                <button class="post-button">Publicar anuncio</button>
-            </div>
-            </nav>
+            <div>
+                <img class="logo" src="./assets/logo-BT-blue.png" alt="bt">
+                <ul class="menu-desktop">
+                    <li><a href="./index.html">INICIO</a></li>
+                    <li><a href="./ofertas.html">OFERTAS</a></li>
+                    <li><a href="#contact">CONTACTO</a></li>
+                </ul>
+                <button class="hamburger hamburger--collapse" type="button">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                </button>
+                <button class="login" onclick="location.href='./login.html'";>Login / Register</button>
+            </div>    
+        </nav>
+        <div class="menu-mobile hidden">
+            <ul>
+                <li><a href="./index.html">INICIO</a></li>
+                <li><a href="./ofertas.html">OFERTAS</a></li>
+                <li><a href="#contact">CONTACTO</a></li>
+            </ul>
+        </div>    
+        </nav>
     </header>
 
     <main>
+        <div class="container-1">
+            <div class="box">
+                <div class="search-container">
+                    <span class="icon"><i class="fa fa-search"></i></span>
+                    <input type="search" id="search" placeholder="Search..."/>
+                </div>
+            </div>
+            <button class="post-button">Publicar anuncio</button>
+        </div>
         <div id="container-2">
             <div class="posts-container">
                 <div class="post">
@@ -71,4 +94,5 @@
         Copyright 2021 - 2022.
     </footer>
 </body>
+<script src="./scripts/script.js"></script>
 </html>
