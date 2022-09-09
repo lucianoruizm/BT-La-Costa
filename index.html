@@ -9,13 +9,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/hamburger.css">
+    <link rel="stylesheet" href="./css/slider.css">
     <title>Inicio</title>
 </head>
 <body>
     <header>
         <nav>
             <div>
-                <img class="logo" src="./assets/logo-BT-blue.png" alt="bt">
                 <ul class="menu-desktop">
                     <li><a href="./ofertas.html">OFERTA DE VACANTE</a></li>
                     <li><a href="./publicaciones.html">OFERTA DE SERVICIO</a></li>
@@ -26,7 +26,7 @@
                         <span class="hamburger-inner"></span>
                     </span>
                 </button>
-                <button class="login" onclick="location.href='./login.html'";>Login / Register</button>
+                <button class="login" onclick="location.href='./login.html'";>INICIAR SESIÓN</button>
             </div>
         </nav>
         <div class="menu-mobile hidden">
@@ -38,7 +38,7 @@
         </div>
         <div class="container-bt">
             <img class="logo-2" src="./assets/logo-BT-sinfondoB-removebg-preview.png" alt="bt">
-            <img class ="background-img" src="https://www.itmastersmag.com/wp-content/uploads/2017/05/empleados.jpg" alt="atWork">
+            <img class ="background-img" src="/assets/employees.jpg" alt="atWork">
         </div>
     </header>
 
@@ -47,25 +47,26 @@
                 <div class="welcome">
                     <h1>¡Bienvenido!</h1>
                     <div class="logo-mobile__container">
-                       <img class="logo-mobile" src="./assets/logo-BT-blue.png" alt="bt">
-                    </div>
-                    <p>Encuentre las mejores ofertas laborales y halle ¡su puesto ideal!, o si busca candidatos
-                       para sumar a su empresa sientase libre de explorar para encontrar a los que mas se ajusten
-                       al perfil deseado.
-                    </p>
-                    <div>
-                        <img class="img" src="https://i0.wp.com/www.zigsaw.in/jobs/wp-content/uploads/2020/07/Types-of-Employees-in-an-Organization.jpg?fit=2000%2C900&ssl=1" alt="atWork">
+                       <img class="logo-mobile" src="./assets/logo-BT-sinfondoB-removebg-preview.png" alt="bt">
                     </div>
                 </div>
-                <div class="first-info">
-                    <h3>Si buscas trabajo o candidatos para tu empresa ¡BT La Costa es tu mejor opción!</h3>
-                    <div class="list-container">   
-                       <ol>
-                          <li>Los anuncios pueden filtrarse por localidades.</li>
-                          <li>Publicaciones odenadas en distintas secciones.</li>
-                          <li>El usuario empleador tendra su publicación destacada.</li>
-                          <li>Esta plataforma ofrece seguridad y confianza.</li>
-                       </ol>
+                <div class="section-one__info">
+                    <h2>Si buscas trabajo o candidatos para tu empresa ¡BT es tu mejor opción!</h3>
+                    <div class="icon-text__container">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <p class="section-one__list">Los anuncios pueden <span>filtrarse</span> por localidades</p>
+                    </div>
+                    <div class="icon-text__container">
+                        <i class="fa-solid fa-pager"></i>
+                        <p class="section-one__list">Publicaciones odenadas en distintas <span>secciones</span></p>
+                    </div>
+                    <div class="icon-text__container">
+                        <i class="fa-solid fa-circle-exclamation"></i>
+                        <p class="section-one__list">El usuario empleador tendra su publicación <span>destacada</span></p>
+                    </div>
+                    <div class="icon-text__container">
+                        <i class="fa-solid fa-lock"></i>
+                        <p class="section-one__list">Esta plataforma ofrece <span>seguridad</span> y confianza</p>
                     </div>
                 </div>
         </div>
@@ -172,6 +173,7 @@
         <p id="contact">Contactenos para cualquier tipo de consulta al siguiente email: <strong>buscotrabajolacosta@bt.com</strong></p>
         &copy; 2021 - 2022
     </footer>
+    <script src="./scripts/script.js"></script>
+    <script src="https://kit.fontawesome.com/31c015764f.js" crossorigin="anonymous"></script>
 </body>
-<script src="./scripts/script.js"></script>
 </html>

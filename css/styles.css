@@ -10,6 +10,7 @@
     --primary: #483D8B;
     --secondary: #e6060642;
     --secondary-visible: #733598;
+    --grey: #fafafa;
 }
 
 body{
@@ -27,6 +28,7 @@ h2 {
     font-family: 'Roboto', sans-serif;
     font-size: 1rem;
     text-align: center;
+    margin-bottom: 10px;
 }
 
 h3 {
@@ -52,11 +54,11 @@ hr {
 }
 
 a{
-    text-decoration: none;
     display: inline-block;
+    margin: 10px 20px;
+    font-size: .9rem;
     color: #fff;
-    margin: 20px;
-    letter-spacing: 3px;
+    text-decoration: none;
 }
 
 ul li {
@@ -109,7 +111,7 @@ nav ul li a:hover {
     background: var(--secondary);
     color: #f1f1f1;
     padding: 5px;
-    height: 64px;
+    height: 50px;
     font-size: .9em;
 }
 
@@ -128,7 +130,7 @@ nav ul li a:hover {
     margin: auto;
     max-width: 40%;
     max-height: 18em;
-}           
+}
 
 .background-img{
     display: none;
@@ -177,7 +179,8 @@ li {
 
 .logo-mobile__container{
     display: block;
-    background: var(--primary);
+    background: rgb(72,61,128);
+    background: linear-gradient(90deg, rgba(72,61,128,1) 43%, rgba(115,53,152,1) 100%);
 }
 
 .logo-mobile {
@@ -200,7 +203,7 @@ li {
 
 .menu-mobile ul {
     padding: 0;
-    
+
 }
 
 .menu-mobile ul li {
@@ -225,7 +228,7 @@ li {
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 50px 0;
+    margin: 5px 0 50px;
 }
 
 .welcome {
@@ -243,30 +246,27 @@ li {
     font-size: 1rem;
 }
 
-.img{
-    display: block;
-    margin: auto;
-    position: relative;
-    max-width: 95%;
+.section-one__info{
+    margin: 45px 10px 10px;
 }
 
-.first-info {
-    text-align: center;
+.section-one__list{
+    padding: 10px;
+    font-size: 1rem;
 }
 
-.first-info h3 {
-    padding: 0;
-    margin-top: 80px;
-    text-align: center;
+.section-one__info span{
+    color: #733598;
 }
 
-.first-info ol {
-    margin-top: 60px;
-}
-
-.list-container{
+.icon-text__container{
     display: flex;
-    justify-content: center;
+    align-items: center;
+}
+
+.search-icon{
+    border-radius: 10px;
+    margin-top: 10px;
 }
 
 /*Section 2*/
@@ -404,7 +404,7 @@ li {
 .logo-3 {
     display: block;
     margin: auto;
-    max-width: 30%;   
+    max-width: 30%;
 }
 
 .social-networks {
@@ -469,7 +469,7 @@ footer p {
     font-size: .7rem;
     padding: 0 0 5px;
     color: #fff;
-    text-align: center;  
+    text-align: center;
 }
 
 strong {
@@ -487,49 +487,48 @@ strong {
            #333
        );
    }
-   
+
    footer{
        padding: 50px;
        margin-bottom: 0px;
        margin-top: 150px;
    }
-   
+
    footer p{
-       font-size: 1rem; 
+       font-size: 1rem;
    }
-   
+
    .menu-desktop{
        display: flex;
        align-items: center;
     }
-   
+
    .background-img{
        display: block;
    }
-   
+
    .logo {
        height: 64px;
        width: 80px;
    }
-   
+
    .logo-mobile__container{
        display: none;
    }
-   
+
    .menu-mobile {
        display: none;
    }
-   
+
    .login{
        padding: 10px;
-       height: 64px;
    }
-   
+
    .container-bt{
        display: block;
        padding: 0;
    }
-   
+
    .logo-2 {
        display: block;
        animation: fadeInAnimation ease 3s;
@@ -541,20 +540,20 @@ strong {
 	   0% {
 	   	opacity: 0;
 	   }
-       
+
 	   100% {
 	   	opacity: 1;
 	   }
     }
-   
+
    /*Section 1*/
    .welcome h1 {
        font-size: 5em;
    }
-   
+
    .welcome p {
        font-size: 1.2em;
-       margin: 50px;
+       margin: 30px;
    }
    /**/
 
@@ -562,23 +561,23 @@ strong {
    .card-info {
      width: clamp(26rem, calc(20rem + 2vw), 22rem);
    }
-   
+
    .card-info__body li {
        font-size: 1.1rem;
    }
-   
+
    .card-info__body button{
        padding: 15px 25px;
    }
    /**/
-   
-   
+
+
    /*section 3*/
    .card-post {
        width: clamp(26rem, calc(20rem + 2vw), 22rem);
    }
    /**/
-   
+
    /*Section 4*/
    #section-four {
       flex-direction: row;
@@ -591,13 +590,13 @@ strong {
        padding-bottom: 0;
        max-width: 40rem;
    }
-   
+
    .logos-networks {
        margin: auto;
        padding-top: 50px;
        max-width: 4em;
    }
-   
+
    .logo-fb {
        margin: auto;
        max-width: 5em;
@@ -612,6 +611,12 @@ strong {
     .welcome h1 {
         text-align: center;
         font-size: 3em;
+    }
+
+    .section-one__info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     h2 {
@@ -634,19 +639,18 @@ strong {
         max-width: 400px;
         max-height: 250px;
     }
-    
+
     .card-post h3 {
         font-size: 2em;
         padding: 10px 0;
     }
-    
+
     .card-post p {
         font-size: 1em;
         padding: 2px 1px 5px;
     }
-    
+
     .card-post span {
         font-size: .8em;
     }
-  
 }

@@ -1,0 +1,11 @@
+<img class="" src="/assets/Types-of-Employees.jpg" alt="">
+                    </div>
+                    <h3>Si buscas trabajo o candidatos para tu empresa ¡BT es tu mejor opción!</h3>
+                    <div class="list-container">   
+                       <ol>
+                          <li>Los anuncios pueden filtrarse por localidades.</li>
+                          <li>Publicaciones odenadas en distintas secciones.</li>
+                          <li>El usuario empleador tendra su publicación destacada.</li>
+                          <li>Esta plataforma ofrece seguridad y confianza.</li>
+                       </ol>
+                    </div>
