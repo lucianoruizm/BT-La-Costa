@@ -4,9 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/hamburger.css">
     <title>Iniciar Sesión</title>
 </head>
 <body>
+    <header>
+        <nav>
+            <div>
+                <img class="logo" src="./assets/logo-BT-blue.png" alt="bt">
+                <ul class="menu-desktop">
+                    <li><a href="./index.html">INICIO</a></li>
+                    <li><a href="./ofertas.html">OFERTA DE VACANTE</a></li>
+                    <li><a href="./publicaciones.html">OFERTA DE SERVICIO</a></li>
+                    <li><a href="./contact.html">CONTACTO</a></li>
+                </ul>
+                <button class="hamburger hamburger--collapse" type="button">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                </button>
+                <img class="logo" src="./assets/logo-BT-sinfondoB-removebg-preview.png" alt="bt">
+            </div>    
+        </nav>
+        <div class="menu-mobile hidden">
+            <ul>
+                <li><a href="./index.html">INICIO</a></li>
+                <li><a href="./ofertas.html">OFERTA DE VACANTE</a></li>
+                <li><a href="./publicaciones.html">OFERTA DE SERVICIO</a></li>
+                <li><a href="#contact">CONTACTO</a></li>
+            </ul>
+        </div>
+    </header>
     <!-- Log in section start-->
     <form autocomplete="off" action="" class="">
         <h3>Login</h3>
@@ -88,6 +117,9 @@
         </table>
     </form>
     <!-- Register section end-->
-
+    <footer>
+        &copy; 2021 - 2022
+    </footer>
+    <script src="./scripts/script.js"></script>
 </body>
 </html>
