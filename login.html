@@ -5,121 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/login.css">
     <link rel="stylesheet" href="./css/hamburger.css">
     <title>Iniciar Sesión</title>
 </head>
 <body>
     <header>
         <nav>
-            <div>
-                <img class="logo" src="./assets/logo-BT-blue.png" alt="bt">
-                <ul class="menu-desktop">
-                    <li><a href="./index.html">INICIO</a></li>
-                    <li><a href="./ofertas.html">OFERTA DE VACANTE</a></li>
-                    <li><a href="./publicaciones.html">OFERTA DE SERVICIO</a></li>
-                    <li><a href="./contact.html">CONTACTO</a></li>
-                </ul>
-                <button class="hamburger hamburger--collapse" type="button">
-                    <span class="hamburger-box">
-                        <span class="hamburger-inner"></span>
-                    </span>
-                </button>
-                <img class="logo" src="./assets/logo-BT-sinfondoB-removebg-preview.png" alt="bt">
+            <div class="nav-container">
+                <img class="logo-login" onclick="location.href='./index.html'"; src="./assets/logo-BT-blue.png" alt="bt">
             </div>    
         </nav>
-        <div class="menu-mobile hidden">
-            <ul>
-                <li><a href="./index.html">INICIO</a></li>
-                <li><a href="./ofertas.html">OFERTA DE VACANTE</a></li>
-                <li><a href="./publicaciones.html">OFERTA DE SERVICIO</a></li>
-                <li><a href="#contact">CONTACTO</a></li>
-            </ul>
-        </div>
     </header>
     <!-- Log in section start-->
-    <form autocomplete="off" action="" class="">
-        <h3>Login</h3>
-    
-        <table style="text-align: end; margin-left: end; margin-right: auto;">
-            <tbody>
-               <tr>
-                  <td>
-                      <label for="email">Your email address:</label>
-                  </td>
-                  <td>
-                     <input type="text" name="email" required placeholder="email@example.com"/>
-                  </td>
-               </tr>        
-               
-               <tr>
-                 <td>
-                      <label for="">Password:</label>
-                 </td>
-                 <td>
-                      <input type="password" name="password" required/>
-                 </td>
-                 <td>
-                      <input type="submit" value="SEND" class="submit"/>
-                 </td>
-               </tr>
-            </tbody>
-        </table>
-    </form>
+    <main>
+        <form class="login-container">
+            <div class="form-body">
+                <div class="input-container">
+                   <i class="fa-solid fa-envelope"></i>
+                   <input type="text" name="email" required placeholder="email@example.com"/>
+                </div>
+                <div class="input-container">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" name="password" required/>
+                </div>
+                <span class="span">¿Has olvidado tu contraseña?</span>
+                <input class="btn" type="submit" value="Login" class="submit"/>
+                <p class="login-p">Si tiene una cuenta ingrese email y password para acceder al sitio</p>
+                <span>--------Or--------</span>
+                <input class="btn-2" type="submit" value="Sign Up" class="submit"/>
+            </div>
+        </form>
+    </main>
     <!-- Log in section end-->
-
-    <!-- Register section start-->
-    <form autocomplete="off" action="" class="">
-            <h3>Register</h3>
-    
-        <table style="text-align: end; margin-left: end; margin-right: auto;">
-            <tbody>
-              <tr>
-                 <td>
-                     <label for="name">Name:</label>
-                 </td>
-                 <td>      
-                     <input id= user nombre= username type="text" required/>
-                 </td>
-             </tr>    
-            
-              <tr>
-                 <td>
-                     <label for="email">Your email address:</label>
-                 </td>
-                 <td>
-                    <input type="text" name="email" required placeholder="email@example.com"/>
-                 </td>
-              </tr>        
-            
-              <tr>
-                <td>
-                     <label for="">Password:</label>
-                </td>
-                <td>
-                     <input type="password" name="password" required/>
-                </td>
-    
-                <tr>
-                 <td>
-                         <label for="">Repeat Password:</label>
-                 </td>
-                 <td>
-                         <input type="password" name="password" required/>
-                 </td>
-    
-                <td>
-                     <input type="submit" value="SEND" class="submit"/>
-                </td>
-              </tr>
-    
-    
-            </tbody>
-        </table>
-    </form>
-    <!-- Register section end-->
     <footer>
         &copy; 2021 - 2022
     </footer>
     <script src="./scripts/script.js"></script>
+    <script src="https://kit.fontawesome.com/31c015764f.js" crossorigin="anonymous"></script>
 </body>
 </html>
