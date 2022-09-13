@@ -18,7 +18,7 @@
 
 body{
     display: block;
-    background-color: var(--white);
+    background-color: #ffffff;
 }
 
 h1{
@@ -129,9 +129,8 @@ nav ul li a:hover {
 
 .logo-2 {
     display: none;
-    margin: auto;
     max-width: 40%;
-    max-height: 18em;
+    max-height: 15em;
 }
 
 .background-img{
@@ -195,6 +194,25 @@ li {
     display: none;
 }
 
+.container-bt__search{
+    padding-bottom: 20px;
+    z-index: 999;
+}
+
+.container-bt__search input#search{
+    padding: 5px;
+    font-size: 10pt;
+    border: none;
+    border-radius: 5px;
+    width: 300px;
+    height: 35px;
+    opacity: .7;
+}
+
+.container-bt__search input#search:focus{
+    outline: 2px solid var(--grey);
+}
+
 .menu-mobile {
     display: flex;
     justify-content: space-between;
@@ -205,7 +223,6 @@ li {
 
 .menu-mobile ul {
     padding: 0;
-
 }
 
 .menu-mobile ul li {
@@ -521,8 +538,10 @@ strong {
    }
 
    .container-bt{
-       display: block;
+       display: flex;
+       flex-direction: column;
        padding: 0;
+       align-items: center;
    }
 
    .logo {

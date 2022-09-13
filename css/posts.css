@@ -25,10 +25,8 @@ input{
 .search-container{
     margin-top: 15px;
     position: relative;
-    background: var(--primary);
     border: none;
     font-size: 10pt;
-    float: left;
     color: #000;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -39,12 +37,12 @@ input{
     background: #333;
     color:#fff;
     border: none;
-    border-radius: 0 15px 15px;
+    border-radius: 5px;
     max-width: 500px;
 }
 @media (min-width: 500px){
     .search-container input#search{
-        width: 300px;
+        width: 92%;
     }
 }
 
@@ -53,12 +51,10 @@ input{
     margin-left: 10px;
     margin-top: 10px;
     z-index: 1;
-    color: #fff;
 }
 
 .search-container input#search:hover, .search-container input#search:focus, .search-container input#search:active{
-    outline: none;
-    background: #333;
+    outline: 2px solid var(--grey);
 }
 
 .post-button {
@@ -68,6 +64,7 @@ input{
     border: none;
     background: var(--primary);
     color: #eee;
+    height: 50px;
 }
 
 .post-button:hover{
