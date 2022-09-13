@@ -93,7 +93,8 @@ nav{
     position: relative;
     width: 100%;
     background: var(--primary);
-    box-shadow: 0 0 15px 5px var(--black);
+    background: linear-gradient(90deg, var(--primary) 43%, var(--secondary) 100%);
+    box-shadow: 0 0 5px var(--black);
     z-index: 999;
 }
 
@@ -105,12 +106,13 @@ nav div{
 
 nav ul li a:hover {
     color: var(--grey);
-    transition: color .3s ease,color .3s ease
+    transition: color .3s ease,color .3s ease;
+    text-decoration: underline;
 }
 
 .login {
     border: none;
-    background: var(--login-button-color);
+    background: transparent;
     color: #f1f1f1;
     padding: 5px;
     height: 50px;
@@ -119,12 +121,18 @@ nav ul li a:hover {
 
 .login:hover{
     cursor: pointer;
-    background: var(--secondary);
-    transition: background .3s;
+    color: var(--grey);
+    transition: color .3s ease,color .3s ease;
+    text-decoration: underline;
 }
 
 .logo {
-    display: none;
+    display: block;
+    max-width: 40%;
+    max-height: 15em;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 
 .logo-2 {
@@ -176,6 +184,8 @@ li {
     display: none;
     margin: 0;
     padding: 0;
+    background: var(--primary);
+    background: linear-gradient(90deg, var(--primary) 43%, var(--secondary) 100%);
 }
 
 .logo-mobile__container{
@@ -539,16 +549,10 @@ strong {
 
    .container-bt{
        display: flex;
-       flex-direction: column;
        padding: 0;
        align-items: center;
+       justify-content: center;
    }
-
-   .logo {
-       display: block;
-       height: 50px;
-       width: 65px;
-    }
 
    .logo-2 {
        display: block;
