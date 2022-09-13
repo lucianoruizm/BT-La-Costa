@@ -10,11 +10,15 @@
     --primary: #483D8B;
     --login-button-color: #e6060642;
     --secondary: #733598;
+    --white: #fcfffd;
+    --white-2: #eee;
+    --black: #1a1a1a;
+    --grey: #8A8D98;
 }
 
 body{
     display: block;
-    background-color: #fff;
+    background-color: var(--white);
 }
 
 h1{
@@ -56,7 +60,7 @@ a{
     display: inline-block;
     margin: 10px 20px;
     font-size: .9rem;
-    color: #fff;
+    color: var(--white);
     text-decoration: none;
 }
 
@@ -72,7 +76,7 @@ ol {
 li{
     text-align: justify;
     line-height: 1.6;
-    color: #000;
+    color: var(--black);
     font-size: 20px;
 }
 
@@ -80,7 +84,7 @@ p{
     font-size: 1.5rem;
     font-weight: lighter;
     text-align: justify;
-    color: #333;
+    color: var(--black);
     padding: 40px;
 }
 
@@ -89,7 +93,7 @@ nav{
     position: relative;
     width: 100%;
     background: var(--primary);
-    box-shadow: 0 0 15px 5px #333;
+    box-shadow: 0 0 15px 5px var(--black);
     z-index: 999;
 }
 
@@ -100,7 +104,7 @@ nav div{
 }
 
 nav ul li a:hover {
-    color: #8A8D98;
+    color: var(--grey);
     transition: color .3s ease,color .3s ease
 }
 
@@ -144,13 +148,13 @@ nav ul li a:hover {
 
 header{
     display: block;
-    background: #f1f1f1;
+    background: var(--white);
     padding: 0;
     margin: 0;
     overflow: hidden;
     position: relative;
     text-align: center;
-    color: #f1f1f1;
+    color: var(--white);
 }
 
 header .hidden {
@@ -194,7 +198,7 @@ li {
 .menu-mobile {
     display: flex;
     justify-content: space-between;
-    color: #333;
+    color: var(--black);
     background: var(--primary);
     transition: max-height .4s ease;
 }
@@ -211,7 +215,7 @@ li {
 .menu-mobile li{
     text-align: justify;
     line-height: 1.6;
-    color: #000;
+    color: var(--black);
     font-size: 15px;
 }
 
@@ -283,9 +287,9 @@ li {
     max-width: 350px;
     max-height: 400px;
     border-radius: 1em;
-    box-shadow: 0 .1rem 1rem #eee;
-    background: #ffffff;
-    background: linear-gradient(90deg, #ffffff 0%, #eee 54%, #ffffff 100%);
+    box-shadow: 0 .1rem 1rem var(--white-2);
+    background: var(--white-2);
+    background: linear-gradient(90deg, #ffffff 0%, var(--white-2) 54%, #ffffff 100%);
 }
 
 .card-info__body ol {
@@ -334,7 +338,7 @@ li {
     max-width: 340px;
     max-height: 210px;
     border-radius: 2em;
-    box-shadow: 1rem 2rem 1rem #eee;
+    box-shadow: 1rem 2rem 1rem var(--white-2);
     background: #ffffff;
     /* background: linear-gradient(90deg, #ffffff 0%, #eee 54%, #ffffff 100%); */
 }
@@ -372,11 +376,11 @@ li {
         var(--primary),
         var(--secondary)
     );
-    color: #f1f1f1;
+    color: var(--white);
 }
 
 .highlighted-post p {
-    color: #f1f1f1;
+    color: var(--white);
 }
 /**/
 
@@ -459,13 +463,13 @@ footer {
     font-size: .7rem;
     background-color: var(--primary);
     text-align: center;
-    color: #fff;
+    color: var(--white);
 }
 
 footer p {
     font-size: .7rem;
     padding: 0 0 5px;
-    color: #fff;
+    color: var(--white);
     text-align: center;
 }
 
@@ -480,8 +484,8 @@ strong {
 @media (min-width: 768px) {
    header{
        background: linear-gradient(
-           #f1f1f1,
-           #333
+           var(--white),
+           var(--black)
        );
    }
 

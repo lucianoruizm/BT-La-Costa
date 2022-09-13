@@ -24,22 +24,9 @@ main{
     flex-direction: column;
     margin-bottom: 50px;
     background-color: #ffffff;
-    width: 85%;
     border-radius: 5px;
     box-shadow: 8px 4px 11px -1px rgba(0,0,0,0.75);
-}
-@media (min-width: 500px){
-    .login-container{
-        width: 50%;
-    }
-}
-@media (min-width: 768px){
-    .login-container{
-        width: 40%;
-    }
-    .form-input{
-        width: 250px;
-    }
+    width: 90%;
 }
 
 .login-container input{
@@ -62,8 +49,9 @@ main{
     align-items: baseline;
 }
 
-.login-container .form-input{
-    height: 35px;
+.form-input{
+    width: 200px;
+    height: 40px;
 }
 
 .span{
@@ -73,10 +61,10 @@ main{
 }
 
 .btn{
-    width: 80%;
+    width: 90%;
     height: 50px;
     background-color: #ff6f2c;
-    border-radius: 3px;
+    border-radius: 5px;
     color: #ffffff;
 }
 
@@ -94,10 +82,10 @@ main{
 
 .btn-2{
     margin: 10px;
-    width: 80%;
+    width: 90%;
     height: 50px;
     background-color: #929292;
-    border-radius: 3px;
+    border-radius: 5px;
     color: #ffffff;
 }
 .btn-2:hover{
@@ -114,4 +102,23 @@ textarea::placeholder, input::placeholder{
     border: 1px solid #e0e0e0;
     padding: 5px;
     border-radius: 2px;
+    width: 200px;
+    height: 100px;
+}
+
+@media (min-width: 500px){
+    .login-container{
+        width: 70%;
+    }
+    .form-input, .textarea-input{
+        width: 250px;
+    }
+}
+@media (min-width: 768px){
+    .login-container{
+        width: 50%;
+    }
+    .form-input, .textarea-input{
+        width: 320px;
+    }
 }
