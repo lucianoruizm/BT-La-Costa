@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./css/login-contact.css">
     <link rel="stylesheet" href="./css/hamburger.css">
     <title>Iniciar Sesión</title>
 </head>
@@ -23,16 +23,38 @@
             <div class="form-body">
                 <div class="input-container">
                    <i class="fa-solid fa-envelope"></i>
-                   <input type="text" name="email" required placeholder="email@example.com"/>
+                   <input class="form-input" type="text" name="email" required placeholder="email@example.com"/>
                 </div>
                 <div class="input-container">
                     <i class="fa-solid fa-lock"></i>
-                    <input type="password" name="password" required/>
+                    <input class="form-input" type="password" name="password" required/>
                 </div>
                 <span class="span">¿Has olvidado tu contraseña?</span>
                 <input class="btn" type="submit" value="Login" class="submit"/>
                 <p class="login-p">Si tiene una cuenta ingrese email y password para acceder al sitio</p>
-                <span>--------Or--------</span>
+                <p class="login-p">o registrese continuación:</p>
+                <div class="input-container">
+                    <i class="fa-solid fa-user"></i>
+                    <input class="form-input" type="text" name="name" required placeholder="Nombre"/>
+                </div>
+                <div class="input-container">
+                    <i class="fa-solid fa-user"></i>
+                    <input class="form-input" type="text" name="lastname" required placeholder="Apellido"/>
+                </div>
+                <div class="input-container">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input class="form-input" type="text" name="email" required placeholder="email@example.com"/>
+                </div>
+                <span>Crear password:</span>
+                <div class="input-container">
+                    <i class="fa-solid fa-lock"></i>
+                    <input class="form-input" type="password" name="password" required/>
+                </div>
+                <span>Repetir password:</span>
+                <div class="input-container">
+                    <i class="fa-solid fa-lock"></i>
+                    <input class="form-input" type="password" name="password" required/>
+                </div>
                 <input class="btn-2" type="submit" value="Sign Up" class="submit"/>
             </div>
         </form>

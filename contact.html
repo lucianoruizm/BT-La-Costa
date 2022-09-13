@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/login-contact.css">
     <link rel="stylesheet" href="./css/hamburger.css">
     <title>Iniciar Sesión</title>
 </head>
@@ -34,6 +35,24 @@
             </ul>
         </div>
     </header>
+
+    <main>
+        <form class="login-container">
+            <div class="form-body">
+                <h2>Contact Us</h2>
+                <div class="input-container">
+                   <input class="form-input" type="text" name="name" required placeholder="Name"/>
+                </div>
+                <div class="input-container">
+                    <input class="form-input" type="text" name="email" required placeholder="email@example.com"/>
+                </div>
+                <div class="input-container">
+                    <textarea class="textarea-input" name="text" id="message" cols="30" rows="10" required placeholder="Message"></textarea>
+                </div>
+                <input class="btn" type="submit" value="Send" class="submit"/>
+            </div>
+        </form>
+    </main>
 
     <footer>
         &copy; 2021 - 2022
