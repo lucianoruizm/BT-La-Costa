@@ -3,11 +3,13 @@ input{
 }
 
 .container-1 {
+    margin-top: 1px;
     padding: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    color: var(--white);
     background: var(--primary);
     background: linear-gradient(90deg, var(--primary) 43%, var(--secondary) 100%);
 }
@@ -19,9 +21,15 @@ input{
     }
 }
 
+.bg-2{
+    background: var(--primary);
+    background: linear-gradient(90deg, var(--secondary) 43%, var(--primary) 100%);
+}
+
 .box{
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 20px;
 }
 @media (min-width: 500px){
@@ -30,39 +38,20 @@ input{
     }
 }
 
-.search-container{
-    margin-top: 15px;
-    position: relative;
-    border: none;
-    font-size: 10pt;
-    color: #000;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
+.post-form{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
 }
 
-.search-container input#search{
-    background: #333;
-    color:#fff;
-    border: none;
-    border-radius: 5px;
-    max-width: 500px;
-}
-@media (min-width: 500px){
-    .search-container input#search{
-        width: 92%;
-    }
-}
-
-.search-container .icon{
-    top: 50%;
-    margin-left: 10px;
-    margin-top: 10px;
-    z-index: 1;
-}
-
-.search-container input#search:hover, .search-container input#search:focus, .search-container input#search:active{
-    outline: 2px solid var(--grey);
+.form-group{
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: c;
 }
 
 .post-button {
