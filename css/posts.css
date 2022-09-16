@@ -92,40 +92,30 @@ input{
 .post {
     display: flex;
     flex-direction: column;
-    margin: 45px 0;
-    box-shadow: 1rem 2rem 1rem #eee;
-    background: #ffffff;
-    /* background: linear-gradient(90deg, #ffffff 0%, #eee 54%, #ffffff 100%); */
+    margin: 20px;
+    background: #b6bad9;
+    border: 1px solid var(--grey);
 }
 
 .post :hover{
     cursor: pointer;
     border-radius: 1em;
-    /* box-shadow: 0 .1rem 1rem #eee; */
-    /* background: linear-gradient(90deg, #ffffff 0%, #eee 54%, #ffffff 100%); */
 }
 
 .highlighted-offer {
-    background: linear-gradient(
-        var(--primary),
-        var(--secondary)
-    );
-    color: #f1f1f1;
-}
-
-.highlighted-offer p {
-    color: #f1f1f1;
+    background: #8a91d4;
 }
 
 .post-body h3 {
     font-size: 1.5em;
     text-align: justify;
+    padding: 10px 0;
 }
 
 .post-body p {
     font-size: 1em;
     text-align: justify;
-    padding: 0;
+    padding: 0 0 10px;
 }
 
 .post-body span {
