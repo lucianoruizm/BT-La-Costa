@@ -17,7 +17,7 @@
                 <ul class="menu-desktop">
                     <li><a href="./index.html">Inicio</a></li>
                     <li><a href="./ofertas.html">Ofertas para vacantes</a></li>
-                    <li><a href="./contact">Contacto</a></li>
+                    <li><a href="./contact.html">Contacto</a></li>
                 </ul>
                 <button class="hamburger hamburger--collapse" type="button">
                     <span class="hamburger-box">
@@ -49,42 +49,9 @@
                 </div>
             </div>
         </div>
-        <div class="post-form">
-            <h2>Publique su anuncio:</h2>
-            <form action="">
-                <div class="form-group">
-                    <label for="">Título</label>
-                    <input type="text" class="" id="" required placeholder="Ingresar título...">
-                  </div>
-                  <div class="form-group">
-                    <label for="">Descripción</label>
-                    <input type="text" class="" id="" required placeholder="Descripción de la oferta laboral...">
-                  </div>
-                  <div class="form-group">
-                    <label for="">Nombre del Lugar</label>
-                    <input type="text" class="" id="" placeholder="Descripción de la oferta laboral...">
-                  </div>
-                  <div class="form-group">
-                    <label for="">Ubicación</label>
-                    <input type="text" class="" id="" placeholder="Descripción de la oferta laboral...">
-                  </div>
-                  <div class="form-group">
-                    <label for="">Dirección</label>
-                    <input type="text" class="" id="" placeholder="Descripción de la oferta laboral...">
-                  </div>
-                  <div class="form-group">
-                    <label for="">Contacto</label>
-                    <input type="text" class="" id="" required placeholder="Descripción de la oferta laboral...">
-                  </div>
-                  <div class="form-check">
-                    <input type="checkbox" class="" id="">
-                    <label class="" for="">Publicación Destacada</label>
-                  </div>
-               <button class="post-button">Publicar anuncio</button>
-            </form>
-        </div>
-        </div>
+        
         <div id="container-2">
+            <h2>Publicaciones recientes:</h2>
             <div class="posts-container">
                 <div class="post">
                     <div class="post-body">
@@ -123,6 +90,39 @@
                     </div>
                 </div>
             </div>
+        </div>
+
+        <div class="post-form">
+            <h2>Publique su anuncio:</h2>
+            <form class="form-container">
+                <div class="form-group">
+                    <label for="">Título(campo obligatorio):</label>
+                    <input type="text" class="" id="" required placeholder="Ingresar título...">
+                  </div>
+                  <div class="form-group">
+                    <label for="">Descripción(campo obligatorio):</label>
+                    <textarea class="form-textarea" name="txtarea" id="idTextarea" cols="30" rows="10" required placeholder="Descripción de la publicación..."></textarea>
+                  </div>
+                  <div class="form-group">
+                    <label for="">Nombre del Lugar:</label>
+                    <input type="text" class="" id="" placeholder="Nombre del lugar...">
+                  </div>
+                  <div class="form-group">
+                    <label for="">Ubicación:</label>
+                    <input type="text" class="" id="" placeholder="Ubicación...">
+                  </div>
+                  <div class="form-group">
+                    <label for="">Dirección:</label>
+                    <input type="text" class="" id="" placeholder="Dirección...">
+                  </div>
+                  <div class="form-group">
+                    <label for="">Contacto:</label>
+                    <input type="text" class="" id="" placeholder="Contacto...">
+                  </div>
+                  <div class="check-post-container">
+                    <button class="post-button">Publicar anuncio</button>
+                  </div>
+            </form>
         </div>
     </main>
 

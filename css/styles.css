@@ -269,7 +269,8 @@ li {
     width: 100%;
     padding: 0;
 }
-.menu-mobile ul:hover {
+
+.menu-mobile a:hover {
     cursor: pointer;
 }
 

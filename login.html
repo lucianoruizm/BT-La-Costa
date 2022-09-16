@@ -12,51 +12,71 @@
 <body>
     <header>
         <nav>
-            <div class="nav-container">
-                <img class="logo-login" onclick="location.href='./index.html'"; src="./assets/logo-BT-blue.png" alt="bt">
+            <div>
+                <ul class="menu-desktop">
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li><a href="./publicaciones.html">Ofertas para vacantes</a></li>
+                    <li><a href="./ofertas.html">Ofertas para servicios</a></li>
+                    <li><a href="./contact.html">Contacto</a></li>
+                </ul>
+                <button class="hamburger hamburger--collapse" type="button">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                </button>
             </div>    
         </nav>
+        <div class="menu-mobile hidden">
+            <ul>
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./ofertas.html">Oferta de vacante</a></li>
+                <li><a href="./publicaciones.html">Oferta de servicio</a></li>
+                <li><a href="./contact.html">Contacto</a></li>
+            </ul>
+        </div>
     </header>
     <!-- Log in section start-->
-    <main>
-        <form class="login-container">
-            <div class="form-body">
-                <div class="input-container">
+    <main class="main-form">
+        <form class="form-container">
+                <div class="form-group-login">
                    <i class="fa-solid fa-envelope"></i>
-                   <input class="form-input" type="text" name="email" required placeholder="email@example.com"/>
+                   <input class="input-login" type="text" name="email" required placeholder="email@example.com"/>
                 </div>
-                <div class="input-container">
+                <div class="form-group-login">
                     <i class="fa-solid fa-lock"></i>
-                    <input class="form-input" type="password" name="password" required/>
+                    <input class="input-login" type="password" name="password" required placeholder="Ingrese contraseña..."/>
                 </div>
-                <span class="span">¿Has olvidado tu contraseña?</span>
-                <input class="btn" type="submit" value="Login" class="submit"/>
+                <div class="form-group form-login__container">
+                    <span class="span">¿Has olvidado tu contraseña?</span>
+                    <input class="btn input-login" type="submit" value="Login" class="submit"/>
+                </div>
                 <p class="login-p">Si tiene una cuenta ingrese email y password para acceder al sitio</p>
                 <p class="login-p">o registrese continuación:</p>
-                <div class="input-container">
+                <div class="form-group-login">
                     <i class="fa-solid fa-user"></i>
-                    <input class="form-input" type="text" name="name" required placeholder="Nombre"/>
+                    <input class="input-login" type="text" name="name" required placeholder="Nombre"/>
                 </div>
-                <div class="input-container">
+                <div class="form-group-login">
                     <i class="fa-solid fa-user"></i>
-                    <input class="form-input" type="text" name="lastname" required placeholder="Apellido"/>
+                    <input class="input-login" type="text" name="lastname" required placeholder="Apellido"/>
                 </div>
-                <div class="input-container">
+                <div class="form-group-login">
                     <i class="fa-solid fa-envelope"></i>
-                    <input class="form-input" type="text" name="email" required placeholder="email@example.com"/>
+                    <input class="input-login" type="text" name="email" required placeholder="email@example.com"/>
                 </div>
-                <span>Crear password:</span>
-                <div class="input-container">
+                <div class="form-group-login">
+                      <span>Crear password:</span>
+                      <i class="fa-solid fa-lock"></i>
+                      <input class="input-login" type="password" name="password" required placeholder="Ingrese contraseña..."/>
+                </div>
+                <div class="form-group-login">
+                    <span>Repetir password:</span>
                     <i class="fa-solid fa-lock"></i>
-                    <input class="form-input" type="password" name="password" required/>
+                    <input class="input-login" type="password" name="password" required placeholder="Ingrese contraseña..."/>
                 </div>
-                <span>Repetir password:</span>
-                <div class="input-container">
-                    <i class="fa-solid fa-lock"></i>
-                    <input class="form-input" type="password" name="password" required/>
+                <div class="form-group">
+                    <input class="btn-2 input-login" type="submit" value="Sign Up" class="submit"/>
                 </div>
-                <input class="btn-2" type="submit" value="Sign Up" class="submit"/>
-            </div>
         </form>
     </main>
     <!-- Log in section end-->
