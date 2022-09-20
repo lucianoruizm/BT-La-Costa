@@ -39,6 +39,25 @@ input{
     }
 }
 
+.container-bt__search{
+    padding-bottom: 20px;
+    z-index: 999;
+}
+
+.container-bt__search input#search{
+    padding: 5px;
+    font-size: 10pt;
+    border: none;
+    border-radius: 5px;
+    width: 250px;
+    height: 35px;
+    opacity: .7;
+}
+
+.container-bt__search input#search:focus{
+    outline: 2px solid var(--grey);
+}
+
 .post-form{
     margin: 30px 20px;
     display: flex;

@@ -16,8 +16,6 @@
         <nav>
             <div>
                 <ul class="menu-desktop">
-                    <li><a href="./ofertas.html">Ofertas para vacantes</a></li>
-                    <li><a href="./publicaciones.html">Ofertas para servicios</a></li>
                     <li><a href="./contact.html">Contacto</a></li>
                 </ul>
                 <button class="hamburger hamburger--collapse" type="button">
@@ -31,15 +29,15 @@
         <div class="menu-mobile hidden">
             <ul>
                 <li><a href="./ofertas.html">Oferta de vacante</a></li>
-                <li><a href="./publicaciones.html">Oferta de servicio</a></li>
+                <li><a href="./ofertasServicios.html">Oferta de servicio</a></li>
                 <li><a href="./contact.html">Contacto</a></li>
             </ul>
         </div>
         <div class="container-bt">
             <img class="logo-2" src="./assets/logo-BT-sinfondoB-removebg-preview.png" alt="bt">
-            <div class="container-bt__search">
-                <span class="icon"><i class="fa fa-search"></i></span>
-                <input type="search" id="search" placeholder="Busque ciudad o puesto laboral"/>
+            <div class="container-bt__offers">
+                <button class="btn-offers" onclick="location.href='./ofertas.html'";>Buscar vacantes disponibles</button>
+                <button class="btn-offers service" onclick="location.href='./ofertasServicios.html'";>Buscar servicios ofrecidos</button>
             </div>
         </div>
     </header>
@@ -49,6 +47,10 @@
                 <div class="welcome">
                     <div class="logo-mobile__container">
                         <img class="logo-mobile" src="./assets/logo-BT-sinfondoB-removebg-preview.png" alt="bt">
+                        <div class="container-bt__offers">
+                            <button class="btn-offers" onclick="location.href='./ofertas.html'";>Buscar vacantes disponibles</button>
+                            <button class="btn-offers service" onclick="location.href='./ofertasServicios.html'";>Buscar servicios ofrecidos</button>
+                        </div>
                      </div>
                     <h1>¡Bienvenido!</h1>
                 </div>
@@ -86,7 +88,6 @@
                         <li>Encuentra al candidato ideal para el perfil deseado.</li>
                         <li>El usuario estandar puede compartir ofertas.</li>
                     </ol>
-                    <button onclick="location.href='./ofertas.html'";>Publicar</button>
                 </div>
             </div>
             <div class="card-info">
@@ -97,7 +98,6 @@
                         <li>Hay usuarios que pueden necesitar a alguien como usted.</li>
                         <li>¡Demuestre que tan profesional es!.</li>
                     </ol>
-                    <button onclick="location.href='./publicaciones.html'";>Publicar</button>
                 </div>
             </div>
         </div>
@@ -133,7 +133,7 @@
                         <span>Contacto</span>     
                      </div>
                 </div>
-                <div class="card-post" onclick="location.href='./publicaciones.html'";>
+                <div class="card-post" onclick="location.href='./ofertasServicios.html'";>
                     <div class="card-post__body">
                         <h3>Peluquero a domicilio</h3>
                         <p>
@@ -142,6 +142,18 @@
                         <span>Ubicación</span><br>
                         <span>Contacto</span>              
                      </div>
+                </div>
+                <div class="card-post highlighted-post" onclick="location.href='./ofertas.html'";>
+                    <div class="card-post__body">
+                       <h3>Guardia de Seguridad</h3>
+                       <p>
+                          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt minus eius sed, quis, sequi reiciendis debitis corporis.
+                       </p>
+                       <span>Nombre del lugar</span><br>
+                       <span>Dirección</span><br>
+                       <span>Ubicación</span><br>
+                       <span>Contacto</span>              
+                    </div>
                 </div>
             </div>
         </div>
