@@ -142,19 +142,14 @@ input{
 .post {
     display: flex;
     flex-direction: column;
-    margin: 20px;
-    background: #f8e0e0;
+    margin: 1px;
+    background: #f1f1f173;
     border: none;
     border-radius: 3px;
 }
 
-.post :hover{
-    cursor: pointer;
-    border-radius: 1em;
-}
-
 .highlighted-offer {
-    background: #8a91d4;
+    background: #2b5fbd47;
 }
 
 .post-body h3 {

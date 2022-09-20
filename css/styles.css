@@ -54,7 +54,6 @@ hr {
     border: 0;
     height: 0.1rem;
     max-width: 100%;
-    margin-top: 60px;
 }
 
 a{
@@ -364,8 +363,9 @@ li {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin: 30px 10px 0;
+    padding: 30px 10px;
     gap: 1rem;
+    background: #f6f0ff6b;
 }
 
 .card-info {
@@ -488,7 +488,8 @@ li {
 #section-four {
     display: flex;
     flex-direction: column;
-    margin: 20px;
+    padding: 20px;
+    background: #f6f0ff6b;
 }
 
 .about-us h2 {
@@ -558,7 +559,6 @@ li {
 
 /*Section Footer*/
 footer {
-    margin-top: 0;
     padding: 30px;
     font-size: .7rem;
     background-color: var(--primary);
@@ -591,8 +591,6 @@ strong {
 
    footer{
        padding: 50px;
-       margin-bottom: 0px;
-       margin-top: 50px;
    }
 
    footer p{
