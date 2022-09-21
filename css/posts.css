@@ -31,7 +31,8 @@ input{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
+    margin-bottom: 10px;
 }
 @media (min-width: 500px){
     .box{
@@ -40,12 +41,10 @@ input{
 }
 
 .container-bt__search{
-    padding-bottom: 20px;
-    z-index: 999;
+    padding-bottom: 5px;
 }
 
 .container-bt__search input#search{
-    padding: 5px;
     font-size: 10pt;
     border: none;
     border-radius: 5px;

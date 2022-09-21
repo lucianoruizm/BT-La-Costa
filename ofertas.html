@@ -41,10 +41,14 @@
             <div class="container-1">
                 <img class="logo" src="./assets/logo-BT-sinfondoB-removebg-preview.png" alt="bt" onclick="location.href='./index.html'";>
                 <div class="box">
-                    <h2>Buscar publicaciones:</h2>
+                    <h2>Buscar publicaciones</h2>
                     <div class="container-bt__search">
                         <span class="icon"><i class="fa fa-search"></i></span>
                         <input type="search" id="search" placeholder="Busque ciudad o puesto laboral"/>
+                    </div>
+                    <h4>o crear:</h4>
+                    <div class="container-bt__offers">
+                        <button class="btn-offers" onclick="location.href='#post-form'";>Realizar publicación</button>
                     </div>
                 </div>
             </div>
@@ -107,7 +111,7 @@
             </div>
         </div>
 
-        <div class="post-form">
+        <div class="post-form" id="post-form">
             <h2>Publique su anuncio:</h2>
             <form class="form-container">
                 <div class="form-group">
