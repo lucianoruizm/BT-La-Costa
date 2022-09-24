@@ -4,7 +4,7 @@ This project emerged from a professional practise in the career of Systems Analy
 
 The objective of this project is that people find a job in an easy and orderly way. The user can create a publication referring to a job offer or job service, 
 a search input is also available to filter the posts. 
-in this case the project is originally based in La Costa, Buenos Aires, Argentina.
+In this case the project is originally based in La Costa, Buenos Aires, Argentina.
 
 Student project:
 Desarrollo de un Sitio Web para la búsqueda laboral: “Busco Trabajo La Costa”:
