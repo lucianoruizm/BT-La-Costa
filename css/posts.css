@@ -48,9 +48,10 @@ input{
     font-size: 10pt;
     border: none;
     border-radius: 5px;
-    width: 250px;
+    width: 225px;
     height: 35px;
     opacity: .7;
+    padding: 0 12px;
 }
 
 .container-bt__search input#search:focus{
