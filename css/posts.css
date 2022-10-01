@@ -149,7 +149,12 @@ input{
 }
 
 .highlighted-offer {
+    display: flex;
+    flex-direction: column;
+    margin: 1px;
     background: #2b5fbd47;
+    border: none;
+    border-radius: 3px;
 }
 
 .post-body h3 {

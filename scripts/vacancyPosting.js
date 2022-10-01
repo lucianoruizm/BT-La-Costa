@@ -1,11 +1,12 @@
 //Post class: represent each post
 class Post{
-    constructor(id, title, description, contact, date){
+    constructor(id, title, description, contact, date, check){
         this.id = id;
         this.title = title;
         this.description = description;
         this.contact = contact;
         this.date = date;
+        this.check = check;
     }
 }
 
@@ -17,14 +18,22 @@ class UI{
     }
     static addPostToList(post){
         const vacancyPostingContainer = document.querySelector('#vacancy-posting-container');
-        const vacancyPost = document.querySelector('.post');
+        const vacancyPost = document.createElement('div');
+        if(post.check === false){
+            vacancyPost.classList.add('post');
+        }else{
+            vacancyPost.classList.add('highlighted-offer');
+        }
+        
         vacancyPost.innerHTML =
-        `<div class="post-body">
-            <span>HS MM:DD:YY</span> 
-            <h3>${post.title}</h3>
-            <p>${post.description}</p>
-            <span>${post.contact}</span>              
-        </div>`;
+        `
+           <div class="post-body">
+              <span>${post.date}</span> 
+              <h3>${post.title}</h3>
+              <p>${post.description}</p>
+              <span>${post.contact}</span>              
+           </div>
+        `;
         vacancyPostingContainer.appendChild(vacancyPost);
     }
     static clearInput(){
@@ -75,9 +84,11 @@ document.querySelector('#entryForm').addEventListener('submit', (e) => {
     const title = document.querySelector('#title').value;
     const description = document.querySelector('#description').value;
     const contact = document.querySelector('#contact').value;
+    const date = time();
+    const check = checked();
 
     // Instatiate Post
-    const post = new Post(id, title, description, contact);
+    const post = new Post(id, title, description, contact, date, check);
     // Add the post to the UI post lists
     UI.addPostToList(post);
     Store.addPosts(post);
@@ -85,6 +96,10 @@ document.querySelector('#entryForm').addEventListener('submit', (e) => {
     UI.clearInput();
 })
 
+
+// FUNCTIONS:
+
+// ID generator
 function generateUUID() {
     var d = new Date().getTime();
     var uuid = 'xxxxxxxxxxxx4xxxyxxxxxxxxxxxxxxx'.replace(/[xy]/g, function (c) {
@@ -93,4 +108,17 @@ function generateUUID() {
         return (c == 'x' ? r : (r & 0x3 | 0x8)).toString(16);
     });
     return uuid;
+}
+
+// Time/date function
+function time(){
+    let today = new Date();
+    let now = today.toLocaleString();
+    return now;
+}
+
+// Checkbox form 
+function checked(){
+    const checkbox = document.getElementById('checkbox').checked;
+    return checkbox;
 }
