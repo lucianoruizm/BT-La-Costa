@@ -1,5 +1,5 @@
 //Post class: represent each post
-class Post{
+class ServicePost{
     constructor(id, title, description, name, city, address, contact, date, check){
         this.id = id;
         this.title = title;
@@ -56,19 +56,19 @@ class UI{
 // Store Class: handle local storage
 class Store{
     static getPosts(){
-        let posts;
-        if(localStorage.getItem('posts') === null){
-            posts = [];
+        let servicePosts;
+        if(localStorage.getItem('servicePosts') === null){
+            servicePosts = [];
         }
         else{
-            posts = JSON.parse(localStorage.getItem('posts'))
+            servicePosts = JSON.parse(localStorage.getItem('servicePosts'))
         }
-        return posts;
+        return servicePosts;
     }
     static addPosts(post){
-        const posts = Store.getPosts();
-        posts.push(post);
-        localStorage.setItem('posts', JSON.stringify(posts));
+        const servicePosts = Store.getPosts();
+        servicePosts.push(post);
+        localStorage.setItem('servicePosts', JSON.stringify(servicePosts));
     }
     // static removePosts(id){
     //     const posts = Store.getPosts();
@@ -99,7 +99,7 @@ document.querySelector('#entryForm').addEventListener('submit', (e) => {
     const check = checked();
 
     // Instatiate Post
-    const post = new Post(id, title, description, name, city, address, contact, date, check);
+    const post = new ServicePost(id, title, description, name, city, address, contact, date, check);
     // Add the post to the UI post lists
     UI.addPostToList(post);
     Store.addPosts(post);

@@ -141,25 +141,31 @@ input{
 
 .post {
     display: flex;
-    flex-direction: column;
-    margin: 1px;
-    background: #f1f1f173;
+    margin: 1px 7px;
+    /* background: #f1f1f173; */
+    background: rgb(187 112 241 / 26%);
     border: none;
     border-radius: 3px;
 }
 
 .highlighted-offer {
     display: flex;
-    flex-direction: column;
-    margin: 1px;
+    margin: 1px 7px;
     background: #2b5fbd47;
     border: none;
     border-radius: 3px;
 }
 
+.post-body {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
 .post-body h3 {
     font-size: 1.5em;
-    text-align: justify;
+    text-align: left;
+    margin-left: 0;
     padding: 10px 0;
 }
 
@@ -171,10 +177,6 @@ input{
 
 .post-body span {
     font-size: .7em;
+    margin: 2px 0;
 }
-
-.post-body {
-    margin: 20px;
-}
-
 /* Post section end */
