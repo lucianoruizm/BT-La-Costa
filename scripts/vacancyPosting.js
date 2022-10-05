@@ -1,9 +1,10 @@
 //Post class: represent each post
 class Post{
-    constructor(id, title, description, contact, date, check){
+    constructor(id, title, description, name, contact, date, check){
         this.id = id;
         this.title = title;
         this.description = description;
+        this.name = name;
         this.contact = contact;
         this.date = date;
         this.check = check;
@@ -21,8 +22,10 @@ class UI{
         const vacancyPost = document.createElement('div');
         if(post.check === false){
             vacancyPost.classList.add('post');
+            console.log(post.check)
         }else{
             vacancyPost.classList.add('highlighted-offer');
+            console.log(post.check)
         }
         
         vacancyPost.innerHTML =
@@ -31,7 +34,8 @@ class UI{
               <span>${post.date}</span> 
               <h3>${post.title}</h3>
               <p>${post.description}</p>
-              <span>${post.contact}</span>              
+              <span>${post.name ? post.name : ''}</span>
+              <span>${post.contact}</span>
            </div>
         `;
         vacancyPostingContainer.appendChild(vacancyPost);
@@ -83,19 +87,47 @@ document.querySelector('#entryForm').addEventListener('submit', (e) => {
     const id = generateUUID();
     const title = document.querySelector('#title').value;
     const description = document.querySelector('#description').value;
+    const name = document.querySelector('#name').value;
     const contact = document.querySelector('#contact').value;
     const date = time();
     const check = checked();
 
     // Instatiate Post
-    const post = new Post(id, title, description, contact, date, check);
+    const post = new Post(id, title, description, name, contact, date, check);
     // Add the post to the UI post lists
     UI.addPostToList(post);
     Store.addPosts(post);
-    // Delete content of input's
+    // Delete content of inputs
     UI.clearInput();
 })
 
+// Event Search
+document.querySelector('#search').addEventListener('keyup', 
+function searchPost(){
+    //Get value of the input
+    const searchValue = document.querySelector('#search').value.toUpperCase();
+    //Get all posts from the post container
+    const allPosts = (document.querySelector('#vacancy-posting-container')).querySelectorAll('div > .post-body');
+    //for loop #1 (used to pass all the posts)
+    for(let i = 0; i < allPosts.length; i++){
+        var count = 0;
+        //Get all element of each line
+        const postValues = allPosts[i].querySelectorAll('span, h3, p');
+        for(let j = 0; j < postValues.length; j++){
+            //Check if any word of the post starts with the input search string
+            if((postValues[j].innerHTML.toUpperCase()).startsWith(searchValue)){
+                count++;
+            } 
+        }
+        if(count > 0){
+            //If any element contains the search value then display block
+            allPosts[i].style.display = '';
+        }else{
+            //Else display none
+            allPosts[i].style.display = 'none';
+        }
+    }
+})
 
 // FUNCTIONS:
 
