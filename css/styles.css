@@ -31,7 +31,7 @@ h1{
 h2 {
     font-size: 1.3rem;
     text-align: center;
-    margin-bottom: 10px;
+    margin: 10px 0;
 }
 
 h3 {
@@ -187,7 +187,6 @@ li {
     display: none;
     margin: 0;
     padding: 0;
-    background: var(--primary);
     background: linear-gradient(90deg, var(--primary) 43%, var(--secondary) 100%);
 }
 
@@ -318,7 +317,19 @@ li {
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 1px 0 35px;
+    background: linear-gradient(90deg, var(--primary) 43%, var(--secondary) 100%);
+}
+
+#section-one h1, h2, p, i{
+    color: #fcfffd;
+}
+
+#section-one hr{
+    background-image: linear-gradient(
+        to right,transparent,
+        var(--grey),
+        transparent
+    );
 }
 
 .welcome {
@@ -347,7 +358,7 @@ li {
 }
 
 .section-one__info span{
-    color: var(--secondary);
+    font-weight: 700;
 }
 
 .icon-text__container{
@@ -367,7 +378,6 @@ li {
     justify-content: space-evenly;
     padding: 30px 10px;
     gap: 1rem;
-    background: #f6f0ff6b;
 }
 
 .card-info {
@@ -409,8 +419,8 @@ li {
 #section-three {
     display: flex;
     flex-direction: column;
-    margin-block: 2rem;
     align-items: center;
+    background: #f6f0ff6b;
 }
 
 .card-post__container {
@@ -491,18 +501,21 @@ li {
     display: flex;
     flex-direction: column;
     padding: 20px;
-    background: #f6f0ff6b;
+    /* background: #f6f0ff6b; */
+    background: var(--primary);
 }
 
 .about-us h2 {
     font-size: 1.5rem;
     margin-bottom: 10px;
+    color: #fcfffd;
 }
 
 .about-us p {
     font-size: 1rem;
     padding: 5px;
     margin: 0;
+    color: #fcfffd;
 }
 
 .logo-3 {
@@ -520,34 +533,23 @@ li {
 
 .social-networks h2 {
     font-size: 1.3rem;
+    color: #fcfffd;
 }
 
-.logo-fb {
-    display: block;
+.fa-facebook, .fa-instagram, .fa-twitter {
+    color: var(--white);
     margin: auto;
-    max-width: 3em;
     padding-top: 20px;
     cursor: pointer;
-    opacity: 0.6;
     transition: 0.3s;
 }
 
-.logo-fb:hover {
-    opacity: 1;
+.fa-brands, .fab {
+    font-size: 3em;
 }
 
-.logos-networks {
-    display: block;
-    margin: auto;
-    padding-top: 20px;
-    max-width: 2em;
-    cursor: pointer;
-    opacity: 0.6;
-    transition: 0.3s;
-}
-
-.logos-networks:hover {
-    opacity: 1;
+.fa-facebook:hover, .fa-instagram:hover, .fa-twitter:hover {
+    color: #1a1a1a;
 }
 
 .bt {
