@@ -29,7 +29,6 @@ class UI{
             vacancyPost.classList.add('highlighted-offer');
             console.log(post.check)
         }
-        
         vacancyPost.innerHTML =
         `
            <div class="post-body">
