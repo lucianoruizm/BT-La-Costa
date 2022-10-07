@@ -120,7 +120,7 @@ function searchPost(){
         const postValues = allPosts[i].querySelectorAll('span, h3, p');
         for(let j = 0; j < postValues.length; j++){
             //Check if any word of the post starts with the input search string
-            if((postValues[j].innerHTML.toUpperCase()).startsWith(searchValue)){
+            if((postValues[j].innerHTML.toUpperCase()).includes(searchValue)){
                 count++;
             } 
         }

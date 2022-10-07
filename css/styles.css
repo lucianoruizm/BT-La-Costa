@@ -363,7 +363,7 @@ li {
 
 .icon-text__container{
     display: flex;
-    align-items: center;
+    align-items: baseline;
 }
 
 .search-icon{
@@ -458,6 +458,10 @@ li {
 .card-post__body {
     margin: 20px;
     position: relative;
+}
+
+.card-post__body p {
+    color: var(--black);
 }
 
 .card-post span {
