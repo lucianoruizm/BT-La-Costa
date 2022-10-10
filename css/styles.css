@@ -423,6 +423,10 @@ li {
     background: #f6f0ff6b;
 }
 
+#section-three h2{
+    color: var(--black);
+}
+
 .card-post__container {
     margin: 0 10px;
 }

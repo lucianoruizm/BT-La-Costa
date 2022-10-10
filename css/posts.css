@@ -1,3 +1,4 @@
+
 input{
     padding: 10px;
     border: 1px solid #e0e0e0;
@@ -134,6 +135,7 @@ input{
 #container-2 h2{
     font-size: 2rem;
     margin: 10px;
+    color: var(--black);
 }
 
 .posts-container{
