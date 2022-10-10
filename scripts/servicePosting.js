@@ -161,3 +161,14 @@ function checked(){
     const checkbox = document.getElementById('checkbox').checked;
     return checkbox;
 }
+
+// Add required input
+function addRequired(){
+    var checkBox = document.getElementById("checkbox");
+    var companyName = document.getElementById("name");
+    if (checkBox.checked == true){
+      companyName.setAttribute("required", "");
+    } else {
+      companyName.removeAttribute("required");
+    }
+  }

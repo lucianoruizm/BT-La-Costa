@@ -41,6 +41,20 @@ main{
     border-radius: 2px;
 }
 
+/* Icons color */
+.fa-envelope {
+    color: var(--black);
+}
+
+.fa-lock {
+    color: var(--black);
+}
+
+.fa-user {
+    color: var(--black);
+}
+/* // */
+
 .form-body{
     margin: 30px auto;
     display: flex;
