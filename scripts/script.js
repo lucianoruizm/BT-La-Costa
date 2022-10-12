@@ -14,20 +14,26 @@ let postBtn = document.querySelector('.btn-offers');
 
 if(!localStorage.getItem('loginChecked')){
     console.log('is not checked')
-    postForm.style.display = 'none';
-
-    postBtn.addEventListener('click', () => {
+    if(postForm && postBtn){
+       
+        postForm.style.display = 'none';
+       
+       postBtn.addEventListener('click', () => {
         alert('Por favor inicie sesión para poder crear una publicación');
     })
+    }
+    
 
 }else{
     console.log('is checked')
     let loginContent = document.querySelector('.login');
     loginContent.textContent = 'Cerrar Sesión';
     
-    postBtn.addEventListener('click', () => {
-        postForm.style.display = 'flex';
-    })
+    if(postBtn){
+        postBtn.addEventListener('click', () => {
+            postForm.style.display = 'flex';
+        })
+    }
 
     loginContent.addEventListener('click', () => {
         localStorage.removeItem('loginChecked');
