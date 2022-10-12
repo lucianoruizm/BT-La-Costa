@@ -78,9 +78,6 @@ function check(){
     
     clear()
     console.log(loginChecked)
-
-    
-
 }
 
 
