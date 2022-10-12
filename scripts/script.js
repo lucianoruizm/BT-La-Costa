@@ -8,8 +8,17 @@ hamburger.addEventListener("click", function() {
     menu.classList.toggle('show')
 });
 
+function clear(){
+    const inputs = document.querySelectorAll('.input-login');
+    // Clear the content of each input
+    inputs.forEach((input) => input.value = '');
+}
 
 // Login
+
+
+
+
 function store(){
     let email = document.getElementById('email');
     let pw = document.getElementById('pw');
@@ -45,6 +54,7 @@ function store(){
     }else{
         localStorage.setItem('email', email.value);
         localStorage.setItem('pw', pw.value);
+        clear()
         alert('Tu cuenta ha sido creada');
     }
 }
@@ -56,14 +66,22 @@ function check(){
     let storedPw = localStorage.getItem('pw');
     let userEmail = document.getElementById('userEmail');
     let userPw = document.getElementById('userPw');
+    let loginBtn = document.querySelector('.login');
     let loginChecked = false;
     
     if(userEmail.value == storedEmail && userPw.value == storedPw){
         loginChecked = true;
+        alert('Inicio de sesión exitoso');
     }else{
         alert('Error al iniciar sesión');
     }
-
+    
+    clear()
     console.log(loginChecked)
 
+    
+
 }
+
+
+

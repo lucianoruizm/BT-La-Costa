@@ -1,3 +1,3 @@
-document.querySelector('#login-form').addEventListener('submit', (e) => {
+document.querySelector('.form-container').addEventListener('submit', (e) => {
     e.preventDefault();
 })
