@@ -41,43 +41,45 @@
     <!-- Log in section start-->
     <main class="main-form">
         <form class="form-container">
-                <div class="form-group-login">
-                   <i class="fa-solid fa-envelope"></i>
-                   <input class="input-login" type="text" name="email" required placeholder="email@example.com"/>
-                </div>
-                <div class="form-group-login">
-                    <i class="fa-solid fa-lock"></i>
-                    <input class="input-login" type="password" name="password" required placeholder="Ingrese contraseña..."/>
-                </div>
-                <div class="form-group form-login__container">
-                    <span class="span">¿Has olvidado tu contraseña?</span>
-                    <input class="btn input-login" type="submit" value="Login" class="submit"/>
-                </div>
-                <p class="login-p">Si tiene una cuenta ingrese email y password para acceder al sitio</p>
-                <p class="login-p">o registrese continuación:</p>
+                <p class="login-p">Registrese continuación:</p>
                 <div class="form-group-login">
                     <i class="fa-solid fa-user"></i>
-                    <input class="input-login" type="text" name="name" required placeholder="Nombre"/>
+                    <input class="input-login" type="text" id="name" required placeholder="Nombre"/>
                 </div>
                 <div class="form-group-login">
                     <i class="fa-solid fa-user"></i>
-                    <input class="input-login" type="text" name="lastname" required placeholder="Apellido"/>
+                    <input class="input-login" type="text" id="lastname" required placeholder="Apellido"/>
                 </div>
                 <div class="form-group-login">
                     <i class="fa-solid fa-envelope"></i>
-                    <input class="input-login" type="text" name="email" required placeholder="email@example.com"/>
+                    <input class="input-login" type="email" id="email" required placeholder="email@example.com"/>
                 </div>
                 <div class="form-group-login">
                       <i class="fa-solid fa-lock"></i>
-                      <input class="input-login" type="password" name="password" required placeholder="Crear password..."/>
+                      <input class="input-login" type="password" id="pw" required placeholder="Crear password..."/>
                 </div>
                 <div class="form-group-login">
                     <i class="fa-solid fa-lock"></i>
-                    <input class="input-login" type="password" name="password" required placeholder="Repetir password..."/>
+                    <input class="input-login" type="password" id="repeatPw" required placeholder="Repetir password..."/>
                 </div>
                 <div class="form-group">
-                    <input class="btn-2 input-login" type="submit" value="Sign Up" class="submit"/>
+                    <input class="btn-2 input-login" type="submit" value="Sign Up" class="submit" onclick="store()"/>
                 </div>
+        </form>
+        <form class="form-container" id="login-form">
+            <p class="login-p">Si tiene una cuenta ingrese email y password para acceder al sitio</p>
+            <div class="form-group-login">
+               <i class="fa-solid fa-envelope"></i>
+               <input class="input-login" type="email" id="userEmail" required placeholder="email@example.com"/>
+            </div>
+            <div class="form-group-login">
+                <i class="fa-solid fa-lock"></i>
+                <input class="input-login" type="password" id="userPw" required placeholder="Ingrese contraseña..."/>
+            </div>
+            <div class="form-group form-login__container">
+                <span class="span">¿Has olvidado tu contraseña?</span>
+                <input class="btn input-login" type="submit" id="submitBtn" value="Login" onclick="check()"/>
+            </div>
         </form>
     </main>
     <!-- Log in section end-->
@@ -85,6 +87,7 @@
         &copy; 2021 - 2022
     </footer>
     <script src="./scripts/script.js"></script>
+    <script src="./scripts/login.js"></script>
     <script src="https://kit.fontawesome.com/31c015764f.js" crossorigin="anonymous"></script>
 </body>
 </html>
