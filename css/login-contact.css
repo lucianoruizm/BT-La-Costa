@@ -59,6 +59,14 @@ main{
 }
 /* // */
 
+.form-container {
+    margin-bottom: 50px;
+}
+
+.form-container p {
+    color: var(--black);
+}
+
 .form-body{
     margin: 30px auto;
     display: flex;
@@ -88,9 +96,11 @@ main{
 }
 
 .btn{
-    width: 100%;
+    width: 50%;
+    margin: auto;
     height: 50px;
     background-color: #ff6f2c;
+    border: none;
     border-radius: 1px;
     color: #ffffff;
 }
@@ -109,9 +119,11 @@ main{
 }
 
 .btn-2{
-    width: 100%;
+    width: 50%;
+    margin: auto;
     height: 50px;
     background-color: #929292;
+    border: none;
     border-radius: 1px;
     color: #ffffff;
 }

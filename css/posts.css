@@ -151,16 +151,16 @@ input{
     display: flex;
     margin: 5px 50px;
     /* background: #f1f1f173; */
-    background: rgb(187 112 241 / 26%);
-    border: none;
+    background: rgba(226, 219, 230, 0.993);
+    border: 1px solid var(--grey);
     border-radius: 3px;
 }
 
 .highlighted-offer {
     display: flex;
     margin: 5px 50px;
-    background: #2b5fbd47;
-    border: none;
+    background: #b9b9e4;
+    border: 1px solid var(--grey);
     border-radius: 3px;
 }
 

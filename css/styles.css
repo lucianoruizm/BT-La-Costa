@@ -420,6 +420,7 @@ li {
     flex-direction: column;
     align-items: center;
     background: #f6f0ff6b;
+    padding: 20px 0;
 }
 
 #section-three h2{
