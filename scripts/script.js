@@ -16,8 +16,8 @@ if(!localStorage.getItem('loginChecked')){
     console.log('is not checked')
     if(postForm && postBtn){
        
-        postForm.style.display = 'none';
-       
+       postForm.style.display = 'none';
+
        postBtn.addEventListener('click', () => {
         alert('Por favor inicie sesión para poder crear una publicación');
     })
